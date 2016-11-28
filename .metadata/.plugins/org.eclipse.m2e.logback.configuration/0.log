@@ -1,0 +1,9 @@
+2016-11-28 10:01:07,045 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Collecting project info '/pom.xml' C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\pom.xml
+2016-11-28 10:01:13,374 [Worker-4] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: technosoft.hotels:hotels.com:0.0.1-SNAPSHOT @ C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\pom.xml.
+2016-11-28 10:01:14,464 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /hotels.com/src/main/java
+2016-11-28 10:01:14,483 [Worker-4] INFO  o.e.m.j.i.AbstractJavaProjectConfigurator - Adding source folder /hotels.com/src/test/java
+2016-11-28 10:01:15,430 [Worker-4] INFO  o.e.m.c.i.p.ProjectConfigurationManager - Imported and configured 1 project(s) in 8 sec
+2016-11-28 10:01:16,363 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 10:01:16,363 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-28 10:01:16,366 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 10:01:16,367 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
