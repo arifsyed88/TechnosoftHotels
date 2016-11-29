@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="34246" started-at="2016-11-29T19:07:21Z" finished-at="2016-11-29T19:07:55Z">
+  <suite name="Default suite" duration-ms="10556" started-at="2016-11-29T20:26:00Z" finished-at="2016-11-29T20:26:11Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="34246" started-at="2016-11-29T19:07:21Z" finished-at="2016-11-29T19:07:55Z">
+    <test name="Default test" duration-ms="10556" started-at="2016-11-29T20:26:00Z" finished-at="2016-11-29T20:26:11Z">
       <class name="technosoft.hotels.hotels.com.App">
-        <test-method status="PASS" signature="chooseDriver()[pri:0, instance:technosoft.hotels.hotels.com.App@74ea46e2]" name="chooseDriver" is-config="true" duration-ms="3553" started-at="2016-11-29T14:07:21Z" finished-at="2016-11-29T14:07:24Z">
+        <test-method status="PASS" signature="chooseDriver()[pri:0, instance:technosoft.hotels.hotels.com.App@6c3708b3]" name="chooseDriver" is-config="true" duration-ms="7398" started-at="2016-11-29T15:26:00Z" finished-at="2016-11-29T15:26:08Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- chooseDriver -->
-        <test-method status="PASS" signature="gotoHome()[pri:0, instance:technosoft.hotels.hotels.com.App@74ea46e2]" name="gotoHome" duration-ms="30493" started-at="2016-11-29T14:07:24Z" finished-at="2016-11-29T14:07:55Z">
+        <test-method status="PASS" signature="gotoHome()[pri:0, instance:technosoft.hotels.hotels.com.App@6c3708b3]" name="gotoHome" duration-ms="3131" started-at="2016-11-29T15:26:08Z" finished-at="2016-11-29T15:26:11Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- gotoHome -->

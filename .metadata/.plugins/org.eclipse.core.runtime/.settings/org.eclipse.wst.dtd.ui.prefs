@@ -1,9 +1,0 @@
-dtdComment=\#00FF00 | null | true | false | null | null
-dtdData=\#00FF00 | null | null | null | null | null
-dtdDefault=\#00FF00 | null | null | null | null | null
-dtdKeyword=\#00FF00 | null | true | true | null | null
-dtdString=\#00FF00 | null | null | true | null | null
-dtdSymbol=\#00FF00 | null | null | null | false | true
-dtdTag=\#00FF00 | null | null | null | null | null
-dtdTagName=\#00FF00 | null | null | null | null | null
-eclipse.preferences.version=1

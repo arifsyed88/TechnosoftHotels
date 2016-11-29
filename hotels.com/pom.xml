@@ -84,6 +84,12 @@
 					<argLine>
 						-javaagent:"${settings.localRepository}/org/aspectj/aspectjweaver/${aspectj.version}/aspectjweaver-${aspectj.version}.jar"
 					</argLine>
+					<properties>
+                    <property>
+                        <name>listener</name>
+                        <value>ru.yandex.qatools.allure.testng.AllureTestListener</value>
+                    </property>
+                </properties>
 				</configuration>
 				<dependencies>
 					<dependency>
@@ -93,8 +99,6 @@
 					</dependency>
 				</dependencies>
 			</plugin>
-
-
 			<!--Needed only to show reports locally -->
 			<plugin>
 				<groupId>org.eclipse.jetty</groupId>
@@ -108,16 +112,15 @@
 			</plugin>
 		</plugins>
 	</build>
-	<!-- To implement Allure reporting -->
-	<reporting>
-		<excludeDefaults>true</excludeDefaults>
-		<plugins>
-			<plugin>
-				<groupId>ru.yandex.qatools.allure</groupId>
-				<artifactId>allure-maven-plugin</artifactId>
-				<version>2.2</version>
-			</plugin>
-		</plugins>
-	</reporting>
+	 <reporting>
+        <excludeDefaults>true</excludeDefaults>
+        <plugins>
+            <plugin>
+                <groupId>ru.yandex.qatools.allure</groupId>
+                <artifactId>allure-maven-plugin</artifactId>
+            </plugin>
+        </plugins>
+    </reporting>
+
 
 </project>
