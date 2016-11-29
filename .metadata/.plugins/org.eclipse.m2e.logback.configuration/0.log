@@ -7,3 +7,77 @@
 2016-11-28 10:01:16,363 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
 2016-11-28 10:01:16,366 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
 2016-11-28 10:01:16,367 [Worker-12] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-28 14:57:39,040 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 14:57:39,044 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-28 14:57:39,047 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 14:57:39,047 [Worker-13] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-28 19:59:46,597 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 19:59:46,614 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-28 19:59:46,617 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 19:59:46,618 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-28 20:07:08,738 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 20:07:08,739 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-28 20:07:08,740 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-28 20:07:08,741 [Worker-20] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-29 13:39:09,533 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:39:09,559 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-29 13:39:09,564 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:39:09,565 [Worker-7] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-29 13:40:56,991 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: technosoft.hotels:hotels.com:0.0.1-SNAPSHOT @ C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\pom.xml.
+2016-11-29 13:41:03,538 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/saucelabs/sauce_testng/2.1.22/sauce_testng-2.1.22.pom
+2016-11-29 13:41:03,652 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/saucelabs/sauce_testng/2.1.22/sauce_testng-2.1.22.pom
+2016-11-29 13:41:03,751 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/saucelabs/sauce_java/2.1.22/sauce_java-2.1.22.pom
+2016-11-29 13:41:06,257 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/saucelabs/sauce_java/2.1.22/sauce_java-2.1.22.pom
+2016-11-29 13:41:06,370 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/saucelabs/sauce_java_common/2.1.22/sauce_java_common-2.1.22.pom
+2016-11-29 13:41:06,434 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/saucelabs/sauce_java_common/2.1.22/sauce_java_common-2.1.22.pom
+2016-11-29 13:41:07,412 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.0.RC2/allure-testng-adaptor-1.5.0.RC2.pom
+2016-11-29 13:41:07,542 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.0.RC2/allure-testng-adaptor-1.5.0.RC2.pom
+2016-11-29 13:41:07,737 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-core/1.5.0.RC2/allure-core-1.5.0.RC2.pom
+2016-11-29 13:41:08,492 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-core/1.5.0.RC2/allure-core-1.5.0.RC2.pom
+2016-11-29 13:41:08,759 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-aspects/1.5.0.RC2/allure-java-aspects-1.5.0.RC2.pom
+2016-11-29 13:41:08,838 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-aspects/1.5.0.RC2/allure-java-aspects-1.5.0.RC2.pom
+2016-11-29 13:41:09,025 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.0.RC2/allure-java-adaptor-api-1.5.0.RC2.pom
+2016-11-29 13:41:09,209 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.0.RC2/allure-java-adaptor-api-1.5.0.RC2.pom
+2016-11-29 13:41:09,345 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-annotations/1.5.0.RC2/allure-java-annotations-1.5.0.RC2.pom
+2016-11-29 13:41:09,415 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-annotations/1.5.0.RC2/allure-java-annotations-1.5.0.RC2.pom
+2016-11-29 13:41:09,515 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-model/1.5.0.RC2/allure-model-1.5.0.RC2.pom
+2016-11-29 13:41:09,588 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-model/1.5.0.RC2/allure-model-1.5.0.RC2.pom
+2016-11-29 13:41:09,777 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC3/properties-2.0.RC3.pom
+2016-11-29 13:41:09,887 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC3/properties-2.0.RC3.pom
+2016-11-29 13:41:10,602 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/saucelabs/sauce_testng/2.1.22/sauce_testng-2.1.22.jar
+2016-11-29 13:41:10,826 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/saucelabs/sauce_testng/2.1.22/sauce_testng-2.1.22.jar
+2016-11-29 13:41:10,848 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/saucelabs/sauce_java_common/2.1.22/sauce_java_common-2.1.22.jar
+2016-11-29 13:41:10,956 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/saucelabs/sauce_java_common/2.1.22/sauce_java_common-2.1.22.jar
+2016-11-29 13:41:11,013 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.0.RC2/allure-testng-adaptor-1.5.0.RC2.jar
+2016-11-29 13:41:11,154 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-testng-adaptor/1.5.0.RC2/allure-testng-adaptor-1.5.0.RC2.jar
+2016-11-29 13:41:11,256 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-aspects/1.5.0.RC2/allure-java-aspects-1.5.0.RC2.jar
+2016-11-29 13:41:11,523 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-aspects/1.5.0.RC2/allure-java-aspects-1.5.0.RC2.jar
+2016-11-29 13:41:11,581 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.0.RC2/allure-java-adaptor-api-1.5.0.RC2.jar
+2016-11-29 13:41:12,250 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-adaptor-api/1.5.0.RC2/allure-java-adaptor-api-1.5.0.RC2.jar
+2016-11-29 13:41:12,368 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-annotations/1.5.0.RC2/allure-java-annotations-1.5.0.RC2.jar
+2016-11-29 13:41:12,864 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-java-annotations/1.5.0.RC2/allure-java-annotations-1.5.0.RC2.jar
+2016-11-29 13:41:13,027 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-model/1.5.0.RC2/allure-model-1.5.0.RC2.jar
+2016-11-29 13:41:13,362 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/yandex/qatools/allure/allure-model/1.5.0.RC2/allure-model-1.5.0.RC2.jar
+2016-11-29 13:41:13,802 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC3/properties-2.0.RC3.jar
+2016-11-29 13:41:14,578 [Worker-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/ru/qatools/commons/properties/2.0.RC3/properties-2.0.RC3.jar
+2016-11-29 13:41:21,123 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:41:21,128 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-29 13:41:21,134 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:41:21,138 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-29 13:41:25,049 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:41:25,049 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-29 13:41:25,051 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:41:25,056 [Worker-9] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-29 13:45:17,220 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:45:17,221 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-29 13:45:17,225 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:45:17,229 [Worker-23] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-29 13:54:40,480 [Worker-0] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: technosoft.hotels:hotels.com:0.0.1-SNAPSHOT @ C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\pom.xml.
+2016-11-29 13:54:50,772 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:54:50,773 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-29 13:54:50,774 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 13:54:50,775 [Worker-0] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
+2016-11-29 14:06:15,803 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 14:06:15,804 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\main\resources
+2016-11-29 14:06:15,805 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2016-11-29 14:06:15,806 [Worker-8] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\Legion\Desktop\TechnosoftHotels\hotels.com\src\test\resources
