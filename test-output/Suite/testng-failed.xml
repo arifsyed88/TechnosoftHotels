@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <parameter name="browserName" value="IE"/>
+  <test name="Tes2t(failed)">
+    <parameter name="browserName" value="IE"/>
+    <classes>
+      <class name="com.hotelsTest.hotels.comTest.sample">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="testMe"/>
+        </methods>
+      </class> <!-- com.hotelsTest.hotels.comTest.sample -->
+    </classes>
+  </test> <!-- Tes2t(failed) -->
+</suite> <!-- Failed suite [Suite] -->
