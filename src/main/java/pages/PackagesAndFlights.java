@@ -1,5 +1,8 @@
 package pages;
 
-public class PackagesAndFlights {
+import utils.WebDriverFactory;
 
+public class PackagesAndFlights extends BaseClass {
+
+	
 }

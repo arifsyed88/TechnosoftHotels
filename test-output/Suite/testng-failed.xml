@@ -2,7 +2,36 @@
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
   <parameter name="browserName" value="IE"/>
-  <test name="Tes2t(failed)">
+  <listeners>
+    <listener class-name="utils.TestListener"/>
+  </listeners>
+  <test name="FirefoxTests(failed)">
+    <parameter name="browserName" value="firefox"/>
+    <classes>
+      <class name="com.hotelsTest.hotels.comTest.sample">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="testMe"/>
+        </methods>
+      </class> <!-- com.hotelsTest.hotels.comTest.sample -->
+    </classes>
+  </test> <!-- FirefoxTests(failed) -->
+  <test name="ChromeTests(failed)">
+    <parameter name="browserName" value="chrome"/>
+    <classes>
+      <class name="com.hotelsTest.hotels.comTest.sample">
+        <methods>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="setBrowser"/>
+          <include name="testMe"/>
+        </methods>
+      </class> <!-- com.hotelsTest.hotels.comTest.sample -->
+    </classes>
+  </test> <!-- ChromeTests(failed) -->
+  <test name="IETests(failed)">
     <parameter name="browserName" value="IE"/>
     <classes>
       <class name="com.hotelsTest.hotels.comTest.sample">
@@ -14,5 +43,5 @@
         </methods>
       </class> <!-- com.hotelsTest.hotels.comTest.sample -->
     </classes>
-  </test> <!-- Tes2t(failed) -->
+  </test> <!-- IETests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

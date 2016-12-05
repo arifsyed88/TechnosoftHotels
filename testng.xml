@@ -25,4 +25,11 @@
     <class name="com.hotelsTest.hotels.comTest.sample"/>
     </classes>
   </test> <!-- Test -->
+  
+   <test name="SauceLabsTests">
+   <parameter name="browserName" value="saucelabs"/>
+    <classes>
+    <class name="com.hotelsTest.hotels.comTest.sample"/>
+    </classes>
+  </test> <!-- Test -->
 </suite> <!-- Suite -->

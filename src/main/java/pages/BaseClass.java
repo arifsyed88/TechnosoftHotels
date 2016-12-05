@@ -1,4 +1,4 @@
-package CommonActions;
+package pages;
 
 public class BaseClass {
 
