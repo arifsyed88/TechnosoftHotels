@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Legion\Desktop\TechnosoftHotels\testng.xml</span>
+                    <span>C:\Users\DJ.DESKTOP-PULI1LF\Documents\Learning\GitHub\TechnosoftHotels\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">4 methods,   4 passed</span>
+                    <span class="method-stats">5 methods, 1 failed,   4 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.SignUpWithExistingAccount" hash-for-method="signUpWithExistingAccount">signUpWithExistingAccount</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -132,6 +146,30 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
+          <div class="suite-Suite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.hotelsTest.hotels.comTest.SignUpWithExistingAccount</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="signUpWithExistingAccount">
+                  </a> <!-- signUpWithExistingAccount -->
+                  <span class="method-name">signUpWithExistingAccount</span>
+                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: Element is not present
+For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
+Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
+System info: host: &apos;DESKTOP-PULI1LF&apos;, ip: &apos;192.168.15.190&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+Driver info: driver.version: unknown
+	at pages.BaseClass.clickButton(BaseClass.java:18)
+	at com.hotelsTest.hotels.comTest.SignUpWithExistingAccount.signUpWithExistingAccount(SignUpWithExistingAccount.java:44)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
           <div class="suite-Suite-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -171,7 +209,7 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Legion\Desktop\TechnosoftHotels\testng.xml</span>
+            <span class="header-content">C:\Users\DJ.DESKTOP-PULI1LF\Documents\Learning\GitHub\TechnosoftHotels\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -189,8 +227,14 @@
   &lt;/test&gt; &lt;!-- FirefoxTests --&gt;
   &lt;test name=&quot;ChromeTests&quot;&gt;
     &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
+    &lt;packages&gt;
+      &lt;package name=&quot;com.hotelsTest.hotels.comTest&quot;/&gt;
+    &lt;/packages&gt;
     &lt;classes&gt;
+      &lt;class name=&quot;com.hotelsTest.hotels.comTest.AppTest&quot;/&gt;
       &lt;class name=&quot;com.hotelsTest.hotels.comTest.sample&quot;/&gt;
+      &lt;class name=&quot;com.hotelsTest.hotels.comTest.SignUpWithExistingAccount&quot;/&gt;
+      &lt;class name=&quot;com.hotelsTest.hotels.comTest.App&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- ChromeTests --&gt;
   &lt;test name=&quot;IETests&quot;&gt;
@@ -219,7 +263,7 @@
                 <span class="test-name">FirefoxTests (1 class)</span>
               </li>
               <li>
-                <span class="test-name">ChromeTests (1 class)</span>
+                <span class="test-name">ChromeTests (4 classes)</span>
               </li>
               <li>
                 <span class="test-name">IETests (1 class)</span>
@@ -251,15 +295,15 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(4);
+data.addRows(5);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'testMe')
-data.setCell(0, 2, 'com.hotelsTest.hotels.comTest.sample')
-data.setCell(0, 3, 71);
+data.setCell(0, 1, 'signUpWithExistingAccount')
+data.setCell(0, 2, 'com.hotelsTest.hotels.comTest.SignUpWithExistingAccount')
+data.setCell(0, 3, 3117);
 data.setCell(1, 0, 1)
 data.setCell(1, 1, 'testMe')
 data.setCell(1, 2, 'com.hotelsTest.hotels.comTest.sample')
-data.setCell(1, 3, 8);
+data.setCell(1, 3, 389);
 data.setCell(2, 0, 2)
 data.setCell(2, 1, 'testMe')
 data.setCell(2, 2, 'com.hotelsTest.hotels.comTest.sample')
@@ -268,11 +312,15 @@ data.setCell(3, 0, 3)
 data.setCell(3, 1, 'testMe')
 data.setCell(3, 2, 'com.hotelsTest.hotels.comTest.sample')
 data.setCell(3, 3, 5);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testMe')
+data.setCell(4, 2, 'com.hotelsTest.hotels.comTest.sample')
+data.setCell(4, 3, 3);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 90 ms</span>
+              <span class="suite-total-time">Total running time: 3 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -287,9 +335,18 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">0 ignored methods</span>
+            <span class="header-content">2 ignored methods</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">com.hotelsTest.hotels.comTest.SignUpWithExistingAccount</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">setBrowser</span>
+                <br/>
+                <span class="ignored-method-name">tearDown</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
         <div panel-name="chronological-Suite" class="panel">
@@ -305,48 +362,60 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testMe</span>
-                <span class="method-start">21278 ms</span>
+                <span class="method-start">16171 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">21366 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">16580 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setBrowser(chrome)</span>
-                <span class="method-start">23729 ms</span>
+                <span class="method-start">19398 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testMe</span>
-                <span class="method-start">38262 ms</span>
+                <span class="method-start">30862 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hotelsTest.hotels.comTest.SignUpWithExistingAccount</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">signUpWithExistingAccount</span>
+                <span class="method-start">30871 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.hotelsTest.hotels.comTest.sample</div> <!-- chronological-class-name -->
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">38272 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">37255 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setBrowser(IE)</span>
-                <span class="method-start">42721 ms</span>
+                <span class="method-start">40843 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testMe</span>
-                <span class="method-start">50926 ms</span>
+                <span class="method-start">47087 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">50935 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">47091 ms</span>
+              </div> <!-- configuration-test after -->
               <div class="configuration-test before">
                 <span class="method-name">setBrowser(saucelabs)</span>
-                <span class="method-start">56209 ms</span>
+                <span class="method-start">51258 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">testMe</span>
-                <span class="method-start">62686 ms</span>
+                <span class="method-start">56862 ms</span>
               </div> <!-- test-method -->
-              <div class="configuration-class after">
+              <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">62694 ms</span>
-              </div> <!-- configuration-class after -->
+                <span class="method-start">56870 ms</span>
+              </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
       </div> <!-- main-panel-root -->

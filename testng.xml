@@ -14,9 +14,9 @@
   
   <test name="ChromeTests">
   <parameter name="browserName" value="chrome"/>
-    <classes>
-      <class name="com.hotelsTest.hotels.comTest.sample"/>
-    </classes>
+    <packages>
+      <package name="com.hotelsTest.hotels.comTest"/>
+    </packages>
   </test> <!-- Test -->
  
   <test name="IETests">

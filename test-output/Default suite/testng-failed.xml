@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="com.hotelsTest.hotels.comTest.sample">
+      <class name="com.hotelsTest.hotels.comTest.SignUpWithExistingAccount">
         <methods>
-          <include name="testMe"/>
+          <include name="signUpWithExistingAccount"/>
         </methods>
-      </class> <!-- com.hotelsTest.hotels.comTest.sample -->
+      </class> <!-- com.hotelsTest.hotels.comTest.SignUpWithExistingAccount -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
