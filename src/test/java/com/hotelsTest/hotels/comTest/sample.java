@@ -9,6 +9,6 @@ public class sample extends WebDriverFactory {
 	@Test
 	public void testMe(){
 		System.out.println("Im tested");
-		WebDriverFactory.getDriver().quit();
+		//WebDriverFactory.getDriver().quit();
 	}
 }

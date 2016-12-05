@@ -1,4 +1,4 @@
-package PageElementLocations;
+package pages;
 
 public class PackagesAndFlights {
 
