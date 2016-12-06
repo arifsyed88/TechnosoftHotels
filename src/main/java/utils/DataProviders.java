@@ -31,19 +31,18 @@ public class DataProviders {
 			
 			int startRow = 0;
 			int startCol = 0;
-			int ci,cj;
+			int currentRow,currentColumn;
 			int totalRows = excelWSheet.getLastRowNum();
-			int totalCols = 4;
+			int totalCols = excelWSheet.getRow(0).getLastCellNum();
 			
 			tableArray = new String[totalRows][totalCols];
 			
-				ci =0;
-				for(int i=startRow;i<totalRows;i++,ci++){
-					cj=0;
+				currentRow =0;
+				for(int i=startRow;i<totalRows;i++,currentRow++){
+					currentColumn=0;
 					
-					for(int j=startCol;j<totalCols;j++,cj++){
-						tableArray[ci][cj]= getCellData(i,j);
-						System.out.println(tableArray[ci][cj]);
+					for(int j=startCol;j<totalCols;j++,currentColumn++){
+						tableArray[currentRow][currentColumn]= getCellData(i,j);
 					}
 				}
 			}

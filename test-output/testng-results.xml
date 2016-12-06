@@ -2,12 +2,12 @@
 <testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1647" started-at="2016-12-06T17:00:38Z" finished-at="2016-12-06T17:00:40Z">
+  <suite name="Default suite" duration-ms="1727" started-at="2016-12-06T17:24:01Z" finished-at="2016-12-06T17:24:02Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1647" started-at="2016-12-06T17:00:38Z" finished-at="2016-12-06T17:00:40Z">
+    <test name="Default test" duration-ms="1727" started-at="2016-12-06T17:24:01Z" finished-at="2016-12-06T17:24:02Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@646c0a67]" name="testMe" duration-ms="45" started-at="2016-12-06T12:00:40Z" data-provider="test" finished-at="2016-12-06T12:00:40Z">
+        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@117525fe]" name="testMe" duration-ms="50" started-at="2016-12-06T12:24:02Z" data-provider="test" finished-at="2016-12-06T12:24:02Z">
           <params>
             <param index="0">
               <value>
@@ -33,7 +33,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMe -->
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@646c0a67]" name="testMe" duration-ms="2" started-at="2016-12-06T12:00:40Z" data-provider="test" finished-at="2016-12-06T12:00:40Z">
+        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@117525fe]" name="testMe" duration-ms="2" started-at="2016-12-06T12:24:02Z" data-provider="test" finished-at="2016-12-06T12:24:02Z">
           <params>
             <param index="0">
               <value>
