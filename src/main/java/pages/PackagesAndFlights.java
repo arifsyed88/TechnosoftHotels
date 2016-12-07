@@ -4,7 +4,6 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 
-import CommonActions.BaseClass;
 import utils.WebDriverFactory;
 
 public class PackagesAndFlights extends BaseClass {
@@ -36,21 +35,21 @@ public class PackagesAndFlights extends BaseClass {
 	
 	private String UserInfo(String key){
 			HashMap<String, String> info= new HashMap<String, String>();
-			clickButton(elementLocations("Flight"));
-			clickButton(elementLocations("FlightAndHotel"));
-			clickButton(elementLocations("ThingsToDo"));
-			clickButton(elementLocations("RoundTrip"));
-			clickButton(elementLocations("MultipleDestination"));
-			clickButton(elementLocations("FlyFrom"));
-			clickButton(elementLocations("FlyFrom2"));
-			clickButton(elementLocations("Departing"));
-			clickButton(elementLocations("Departing2"));
-			clickButton(elementLocations("Returning"));
-			clickButton(elementLocations("Adults"));
-			clickButton(elementLocations("Children"));
-			clickButton(elementLocations("AddHotel"));
-			clickButton(elementLocations("Search"));
-			clickButton(elementLocations("PageHeader"));
+//			clickButton(elementLocations("Flight"));
+//			clickButton(elementLocations("FlightAndHotel"));
+//			clickButton(elementLocations("ThingsToDo"));
+//			clickButton(elementLocations("RoundTrip"));
+//			clickButton(elementLocations("MultipleDestination"));
+//			clickButton(elementLocations("FlyFrom"));
+//			clickButton(elementLocations("FlyFrom2"));
+//			clickButton(elementLocations("Departing"));
+//			clickButton(elementLocations("Departing2"));
+//			clickButton(elementLocations("Returning"));
+//			clickButton(elementLocations("Adults"));
+//			clickButton(elementLocations("Children"));
+//			clickButton(elementLocations("AddHotel"));
+//			clickButton(elementLocations("Search"));
+//			clickButton(elementLocations("PageHeader"));
 		
 		
 		return info.get(key);

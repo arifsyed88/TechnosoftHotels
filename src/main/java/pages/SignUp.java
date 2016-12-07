@@ -4,10 +4,6 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 
-import CommonActions.BaseClass;
-
-
-
 public class SignUp extends BaseClass{
 
  public By signUp(String key){	
@@ -27,11 +23,11 @@ public class SignUp extends BaseClass{
  }
  public void createAccount(String email, String password, String FirstName, String LastName){
      
-		enterData(signUp("email"), email);
-		enterData(signUp("password"), password);
-		enterData(signUp("FirstName"), FirstName);
-		enterData(signUp("LastName"), LastName);
-		clickButton(signUp("signUpButton"));
+//		enterData(signUp("email"), email);
+//		enterData(signUp("password"), password);
+//		enterData(signUp("FirstName"), FirstName);
+//		enterData(signUp("LastName"), LastName);
+//		clickButton(signUp("signUpButton"));
 	}
 
 }

@@ -2,41 +2,31 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-<<<<<<< HEAD
-  <suite name="Default suite" duration-ms="23884" started-at="2016-12-07T15:03:51Z" finished-at="2016-12-07T15:04:15Z">
+  <suite name="Suite" duration-ms="34132" started-at="2016-12-07T19:28:49Z" finished-at="2016-12-07T19:29:23Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="23884" started-at="2016-12-07T15:03:51Z" finished-at="2016-12-07T15:04:15Z">
-      <class name="utils.Calender">
-        <test-method status="PASS" signature="dateSetter()[pri:0, instance:utils.Calender@5b852b49]" name="dateSetter" duration-ms="23740" started-at="2016-12-07T10:03:52Z" finished-at="2016-12-07T10:04:15Z">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- dateSetter -->
-      </class> <!-- utils.Calender -->
-=======
-  <suite name="Default suite" duration-ms="1625" started-at="2016-12-07T16:21:56Z" finished-at="2016-12-07T16:21:58Z">
-    <groups>
-    </groups>
-    <test name="Default test" duration-ms="1625" started-at="2016-12-07T16:21:56Z" finished-at="2016-12-07T16:21:58Z">
+    <test name="FirefoxTests" duration-ms="34132" started-at="2016-12-07T19:28:49Z" finished-at="2016-12-07T19:29:23Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@646c0a67]" name="testMe" duration-ms="40" started-at="2016-12-07T11:21:58Z" data-provider="test" finished-at="2016-12-07T11:21:58Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@4b039c6d]" name="setBrowser" is-config="true" duration-ms="22211" started-at="2016-12-07T14:28:49Z" finished-at="2016-12-07T14:29:11Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456]]>
+                <![CDATA[firefox]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
+        </test-method> <!-- setBrowser -->
+        <test-method status="PASS" signature="testMe()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@4b039c6d]" name="testMe" duration-ms="9805" started-at="2016-12-07T14:29:11Z" finished-at="2016-12-07T14:29:21Z">
+          <reporter-output>
+          </reporter-output>
         </test-method> <!-- testMe -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@4b039c6d]" name="tearDown" is-config="true" duration-ms="1996" started-at="2016-12-07T14:29:21Z" finished-at="2016-12-07T14:29:23Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
       </class> <!-- com.hotelsTest.hotels.comTest.sample -->
->>>>>>> 9b427955dc5682d5ebb7c9840304211d02a91001
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- FirefoxTests -->
+  </suite> <!-- Suite -->
 </testng-results>
