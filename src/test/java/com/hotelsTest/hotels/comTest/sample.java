@@ -13,12 +13,7 @@ public class sample{
 	
 	@Test
 	public void testMe() throws InterruptedException{
-//		Calender.selectTomorrow();
-//		Calender.selectDayAfterTomorrow();
-	//	Calender.addDays(20);
-		Thread.sleep(10000);
-		
-		//Calender.pickdate();
+		Calender.chooseSpecificDate(11, 28, 17);
 		
 		
 		
