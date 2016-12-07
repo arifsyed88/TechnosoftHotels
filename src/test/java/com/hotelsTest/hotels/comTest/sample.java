@@ -11,9 +11,9 @@ import utils.WebDriverFactory;
 public class sample{
 //extends WebDriverFactory {
 	
-	@Test
-	public void testMe() throws InterruptedException{
-		Calender.chooseSpecificDate(11, 28, 17);
+	@Test(dataProvider = "test", dataProviderClass = utils.DataProviders.class)
+	public void testMe(String a, String b) throws InterruptedException{
+		System.out.println(a + b);
 		
 		
 		
