@@ -17,34 +17,29 @@ public class DataProviders {
 	private static XSSFSheet excelWSheet;
 	private static XSSFWorkbook ExcelWBook;
 	private static XSSFCell Cell;
-	private static XSSFRow Row;
 
 	private static Object[][] getTableArray(String sheetName){
 		String[][]tableArray = null;
 		
 		try{
-			File source = new File("Resources/excelFiles/sheet35.xlsx");
+			File source = new File("Resources/excelFiles/Book3.xlsx");
 			FileInputStream fileInput = new FileInputStream(source);
 			
 			ExcelWBook = new XSSFWorkbook(fileInput);
-			excelWSheet = ExcelWBook.getSheetAt(0);
+			excelWSheet = ExcelWBook.getSheet(sheetName);
 			
 			int startRow = 0;
 			int startCol = 0;
-			int currentRow,currentColumn;
 			int totalRows = excelWSheet.getLastRowNum();
 			int totalCols = excelWSheet.getRow(0).getLastCellNum();
 			
-			tableArray = new String[totalRows][totalCols];
-			
-				currentRow =0;
-				for(int i=startRow;i<totalRows;i++,currentRow++){
-					currentColumn=0;
-					
-					for(int j=startCol;j<totalCols;j++,currentColumn++){
-						tableArray[currentRow][currentColumn]= getCellData(i,j);
+			tableArray = new String[totalRows][totalCols];				
+				for(int i=startRow;i<totalRows;i++){
+					for(int j=startCol;j<totalCols;j++){
+						tableArray[i][j]= getCellData(i,j);
 					}
 				}
+				ExcelWBook.close();
 			}
 		catch(FileNotFoundException e){
 			e.getMessage();
