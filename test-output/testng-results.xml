@@ -2,12 +2,24 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="178" started-at="2016-12-07T15:35:36Z" finished-at="2016-12-07T15:35:37Z">
+  <suite name="Default suite" duration-ms="1625" started-at="2016-12-07T16:21:56Z" finished-at="2016-12-07T16:21:58Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="178" started-at="2016-12-07T15:35:36Z" finished-at="2016-12-07T15:35:37Z">
+    <test name="Default test" duration-ms="1625" started-at="2016-12-07T16:21:56Z" finished-at="2016-12-07T16:21:58Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="testMe()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@70228253]" name="testMe" duration-ms="90" started-at="2016-12-07T10:35:36Z" finished-at="2016-12-07T10:35:37Z">
+        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@646c0a67]" name="testMe" duration-ms="40" started-at="2016-12-07T11:21:58Z" data-provider="test" finished-at="2016-12-07T11:21:58Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMe -->
