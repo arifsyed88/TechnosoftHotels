@@ -1,145 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="1723" started-at="2016-12-06T17:28:25Z" finished-at="2016-12-06T17:28:27Z">
+  <suite name="Default suite" duration-ms="12150" started-at="2016-12-07T04:43:25Z" finished-at="2016-12-07T04:43:37Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="1723" started-at="2016-12-06T17:28:25Z" finished-at="2016-12-06T17:28:27Z">
-      <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@117525fe]" name="testMe" duration-ms="50" started-at="2016-12-06T12:28:27Z" data-provider="test" finished-at="2016-12-06T12:28:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[:asdfghjkl]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[:asdfghjkl]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[498723.45]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[:asdfghjkl]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[:asdfghjkl]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[498723.45]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[:asdfghjkl]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[4]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[:asdfghjkl]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[498723.45]]>
-              </value>
-            </param>
-          </params>
+    <test name="Default test" duration-ms="12150" started-at="2016-12-07T04:43:25Z" finished-at="2016-12-07T04:43:37Z">
+      <class name="utils.Calender">
+        <test-method status="PASS" signature="datePicker()[pri:0, instance:utils.Calender@54e3658c]" name="datePicker" duration-ms="12010" started-at="2016-12-06T23:43:25Z" finished-at="2016-12-06T23:43:37Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMe -->
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@117525fe]" name="testMe" duration-ms="3" started-at="2016-12-06T12:28:27Z" data-provider="test" finished-at="2016-12-06T12:28:27Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[lkjhlkjh]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="3">
-              <value>
-                <![CDATA[!@#$$%^]]>
-              </value>
-            </param>
-            <param index="4">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="5">
-              <value>
-                <![CDATA[lkjhlkjh]]>
-              </value>
-            </param>
-            <param index="6">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="7">
-              <value>
-                <![CDATA[!@#$$%^]]>
-              </value>
-            </param>
-            <param index="8">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="9">
-              <value>
-                <![CDATA[lkjhlkjh]]>
-              </value>
-            </param>
-            <param index="10">
-              <value>
-                <![CDATA[3]]>
-              </value>
-            </param>
-            <param index="11">
-              <value>
-                <![CDATA[!@#$$%^]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- testMe -->
-      </class> <!-- com.hotelsTest.hotels.comTest.sample -->
+        </test-method> <!-- datePicker -->
+      </class> <!-- utils.Calender -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

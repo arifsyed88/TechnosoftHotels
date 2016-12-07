@@ -65,7 +65,7 @@ public class DataProviders {
 	}
 	
 	
-	private static String getCellData(int RowNum, int ColNum) {
+	private static String getCellData(int RowNum, int ColNum) throws Exception {
 		 
 		try{
 
