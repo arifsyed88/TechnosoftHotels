@@ -2,15 +2,15 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="12150" started-at="2016-12-07T04:43:25Z" finished-at="2016-12-07T04:43:37Z">
+  <suite name="Default suite" duration-ms="23884" started-at="2016-12-07T15:03:51Z" finished-at="2016-12-07T15:04:15Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="12150" started-at="2016-12-07T04:43:25Z" finished-at="2016-12-07T04:43:37Z">
+    <test name="Default test" duration-ms="23884" started-at="2016-12-07T15:03:51Z" finished-at="2016-12-07T15:04:15Z">
       <class name="utils.Calender">
-        <test-method status="PASS" signature="datePicker()[pri:0, instance:utils.Calender@54e3658c]" name="datePicker" duration-ms="12010" started-at="2016-12-06T23:43:25Z" finished-at="2016-12-06T23:43:37Z">
+        <test-method status="PASS" signature="dateSetter()[pri:0, instance:utils.Calender@5b852b49]" name="dateSetter" duration-ms="23740" started-at="2016-12-07T10:03:52Z" finished-at="2016-12-07T10:04:15Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- datePicker -->
+        </test-method> <!-- dateSetter -->
       </class> <!-- utils.Calender -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
