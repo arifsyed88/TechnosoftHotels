@@ -7,19 +7,14 @@ import org.openqa.selenium.By;
 public class Calender extends WebDriverFactory{
 	private static Calendar calendar = Calendar.getInstance();
 	private static SimpleDateFormat timeFormat = new SimpleDateFormat("MM/dd/yy");
-
-
-	
 	
 	public static void travelDate(boolean Tomorrow, By locater){
 		if(Tomorrow=true){
+			String tomorrow = addDaysToCurrentDate(1);
+			getDriver().findElement(locater).click();
+			getDriver().findElement(By.cssSelector("a[aria-label='"+ tomorrow+ "']")).click();//static
 			
-		String tomorrow = addDaysToCurrentDate(1);
-		getDriver().findElement(locater).click();
-		getDriver().findElement(By.cssSelector("a[aria-label='"+ tomorrow+ "']")).click();//static
-		
 		}else{
-			
 			String dayAfterTomorrow = addDaysToCurrentDate(2);
 			getDriver().findElement(locater).click();// locater needed here
 			getDriver().findElement(By.cssSelector("a[aria-label='"+ dayAfterTomorrow+ "']")).click();
