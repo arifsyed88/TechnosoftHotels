@@ -1,20 +1,24 @@
 package com.hotelsTest.hotels.comTest;
 
-import org.openqa.selenium.WebDriver;
-import org.openqa.selenium.firefox.FirefoxDriver;
+import org.openqa.selenium.By;
 import org.testng.annotations.Test;
-import pages.HotelSearchPage;
-import pages.PackagesAndFlights;
+
+import pages.HomePage;
+import pages.SearchResultsHotels;
 import utils.Calender;
-import utils.DataProviders;
-import utils.RetryAnalyzer;
 import utils.WebDriverFactory;
 
 
 public class sample extends WebDriverFactory {
 	
-	@Test(dataProviderClass = DataProviders.class, dataProvider = "test")
-	public void testMe(String a, String b) throws InterruptedException{
-		System.out.println(a + b );
+	@Test(testName = "TS01")
+	public void TS01() {
+		HomePage.searchDestination("New York");
+		HomePage.clickButton("search");
+		SearchResultsHotels.verifyButton("enterDates", "Enter Dates");
+		SearchResultsHotels.clickButton("enterDates");
+		SearchResultsHotels.checkIn();
+		SearchResultsHotels.checkOut();
+		SearchResultsHotels.verifyButton("numOfNights", "1");
 	}
 }
