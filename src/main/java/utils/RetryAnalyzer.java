@@ -10,7 +10,7 @@ import org.testng.annotations.Test;
 public class RetryAnalyzer implements IRetryAnalyzer {
 
 	int minretryCount = 0;
-	int maxretryCount = 1;
+	int maxretryCount = 9;
 
 	public boolean retry(ITestResult result) {
 		if (ITestResult.FAILURE == result.getStatus()){
@@ -20,7 +20,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 		}
 		if (minretryCount <= maxretryCount)
 			
-//		We will use "@Test(retryAnalyzer = Retry.class)" on test to retry the test.
+//		We will use "@Test(retryAnalyzer = RetryAnalyzer.class)" on test to retry the test.
 
 		{
 			System.out.println("Following test is failing====" + result.getName());

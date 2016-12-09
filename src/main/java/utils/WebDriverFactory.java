@@ -2,6 +2,7 @@ package utils;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.List;
 import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.By;
@@ -98,7 +99,12 @@ public class WebDriverFactory {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(
 		        ExpectedConditions.visibilityOfElementLocated(locater));
-		Attachments.createAttachment();
+	}
+	
+	public static List<WebElement> WaitUntilVisiblelist(By locater){
+		WebDriverWait wait = new WebDriverWait(driver, 10);
+		List<WebElement> element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locater));
+		return element;
 	}
 	
 	public static WebElement webDriverFluentWait(final By locator) {
@@ -116,16 +122,16 @@ public class WebDriverFactory {
 				return driver.findElement(locator);
 			}
 		});
-		Attachments.createAttachment();
 		return element;
 	}
+	
 
 	@BeforeTest
 	@Parameters("browserName")
 	public void setBrowser(String browserName){
 		chooseBrowser(browserName);
-		driver.manage().window().maximize();
 		driver.navigate().to(URL);
+		driver.manage().window().maximize();
 		}
 	
 	@AfterTest

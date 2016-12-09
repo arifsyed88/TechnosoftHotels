@@ -1,8 +1,10 @@
 package pages;
 
 import java.util.HashMap;
+import java.util.List;
 
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebElement;
 
 import utils.WebDriverFactory;
 
@@ -56,5 +58,28 @@ public class PackagesAndFlights extends BaseClass {
 		
 	}
 
+	
+	public static void autocompleteFlights(){
+		WebDriverFactory.getDriver().navigate().to("https://travel.hotels.com/Packages-Flights?intlid=HOME+%253A%253A+header_main_section&");
+		//.main-suggestion
+		WebDriverFactory.getDriver().findElement(By.cssSelector("#package-origin")).sendKeys("new york");
+		WebDriverFactory.WaitImplicit(5000);
+		List<WebElement> list = WebDriverFactory.getDriver().findElements(By.cssSelector(".main-suggestion"));
+		System.out.println(list.size());
+		int indexNum = autoCompleteListIndex(list, "new york");
+		List<WebElement> elementList2 = WebDriverFactory.getDriver().findElements(By.cssSelector(".main-suggestion"));
+		WebDriverFactory.WaitImplicit(5000);
+		elementList2.get(indexNum).click();
+	}
+	
+public static int autoCompleteListIndex(List<WebElement> list, String input){
+        
+        for(WebElement element : list){
+            if(element.getText().equals(input)){
+                return list.indexOf(element);
+            }
+        }
+        return 0;
+    }
 	
 }

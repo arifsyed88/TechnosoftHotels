@@ -1,32 +1,60 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" total="2" passed="2">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="34132" started-at="2016-12-07T19:28:49Z" finished-at="2016-12-07T19:29:23Z">
+  <suite name="Suite" duration-ms="10960" started-at="2016-12-09T04:10:56Z" finished-at="2016-12-09T04:11:07Z">
     <groups>
     </groups>
-    <test name="FirefoxTests" duration-ms="34132" started-at="2016-12-07T19:28:49Z" finished-at="2016-12-07T19:29:23Z">
+    <test name="SauceLabsTests" duration-ms="10960" started-at="2016-12-09T04:10:56Z" finished-at="2016-12-09T04:11:07Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@4b039c6d]" name="setBrowser" is-config="true" duration-ms="22211" started-at="2016-12-07T14:28:49Z" finished-at="2016-12-07T14:29:11Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="setBrowser" is-config="true" duration-ms="6469" started-at="2016-12-08T23:10:56Z" finished-at="2016-12-08T23:11:03Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[firefox]]>
+                <![CDATA[saucelabs]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="testMe()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@4b039c6d]" name="testMe" duration-ms="9805" started-at="2016-12-07T14:29:11Z" finished-at="2016-12-07T14:29:21Z">
+        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="testMe" duration-ms="33" started-at="2016-12-08T23:11:04Z" data-provider="test" finished-at="2016-12-08T23:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[123]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[456]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testMe -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@4b039c6d]" name="tearDown" is-config="true" duration-ms="1996" started-at="2016-12-07T14:29:21Z" finished-at="2016-12-07T14:29:23Z">
+        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="testMe" duration-ms="2" started-at="2016-12-08T23:11:04Z" data-provider="test" finished-at="2016-12-08T23:11:04Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[asdf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testMe -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="tearDown" is-config="true" duration-ms="3061" started-at="2016-12-08T23:11:04Z" finished-at="2016-12-08T23:11:07Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hotelsTest.hotels.comTest.sample -->
-    </test> <!-- FirefoxTests -->
+    </test> <!-- SauceLabsTests -->
   </suite> <!-- Suite -->
 </testng-results>

@@ -30,7 +30,7 @@ public class DataProviders {
 			
 			int startRow = 0;
 			int startCol = 0;
-			int totalRows = excelWSheet.getLastRowNum();
+			int totalRows = excelWSheet.getLastRowNum()+1;
 			int totalCols = excelWSheet.getRow(0).getLastCellNum();
 			
 			tableArray = new String[totalRows][totalCols];				
@@ -67,6 +67,7 @@ public class DataProviders {
 			Cell = excelWSheet.getRow(RowNum).getCell(ColNum);
 				Cell.setCellType(1);
 				String cellData = Cell.getStringCellValue();
+				System.out.println(cellData);
 				return cellData;
 
 			}catch (Exception e){
