@@ -6,7 +6,6 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
-import CommonActions.GeneralActions;
 import utils.WebDriverFactory;
 
 public class HotelSearchPage extends BaseClass{
