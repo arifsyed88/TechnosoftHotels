@@ -1,5 +1,6 @@
 package pages;
 
+import java.util.ArrayList;
 import java.util.List;
 
 import org.openqa.selenium.By;
@@ -18,11 +19,15 @@ public class BaseClass {
 	}
 	
 	protected void click(WebElement element){
+		element.click();
+	}
+	
+	protected void actionClick(WebElement element){
 		actions.moveToElement(element).click().build().perform();
 	}
 	
 	protected void enterData(WebElement element, String inputData) {
-		actions.moveToElement(element).sendKeys(inputData).build().perform();
+		element.sendKeys(inputData);
 	}
 	
 	protected void verifyMessage(WebElement element, String expectedText ){
@@ -30,6 +35,11 @@ public class BaseClass {
 	  Assert.assertEquals(actualText,expectedText);
   	}
   
+	protected void switchToWidnow(int index) {
+		List<String> listOfWindows = new ArrayList<String>(WebDriverFactory.getDriver().getWindowHandles());
+		WebDriverFactory.getDriver().switchTo().window(listOfWindows.get(index));
+	}
+	
 	public void autoComplete(By locater, String inputData){
 		WebDriverFactory.WaitImplicit(5000);
 		List<WebElement> elementList = WebDriverFactory.getDriver().findElements(locater);

@@ -11,6 +11,7 @@ public class HomePage extends BaseClass{
 		HashMap<String, By> elementLocations = new HashMap<String, By>();
 		elementLocations.put("searchDestinationTextBox", By.cssSelector("#qf-0q-destination"));
 		elementLocations.put("search", By.cssSelector("[type='submit']"));
+		elementLocations.put("hotelDeals", By.cssSelector("#hdr-deals"));
 		return findElmt(elementLocations.get(key));
 	}
 
