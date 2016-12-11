@@ -7,6 +7,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import utils.Calender;
+import utils.WebDriverFactory;
 
 public class HotelDeals extends BaseClass{
 	private static HotelDeals deals = new HotelDeals();
@@ -43,14 +44,15 @@ public class HotelDeals extends BaseClass{
 	
 	public static void verifyReviewsRemainConstant(String index){
 		String searchPageReviews = deals.findElmt(By.xpath("//li[" + index + "]//a[@class='full-view']")).getText();
-		System.out.println(searchPageReviews);
+		String[] split1 = searchPageReviews.split(" ");
+		String[] split2 = split1[0].split(",");
+		int reviewSrchPg = Integer.parseInt(split2[0]+split2[1]);
 		deals.findElmt(By.xpath("//li[" + index + "]//a[@class='full-view']")).click();
 		deals.switchToWidnow(1);
-		String detailedPageReviews = deals.findElmt(By.cssSelector("[title~='All']>span")).getText();
-		System.out.println(detailedPageReviews);
-		if(!searchPageReviews.contains(detailedPageReviews)){
-			Assert.fail();
-		}
+		WebDriverFactory.WaitImplicit(5000);
+		String detailedPageReviews = deals.findElmt(By.cssSelector(".cat>span")).getText();
+		int reviewHtlPg = Integer.parseInt(detailedPageReviews.replace("(", "").replace(")", ""));
+		Assert.assertEquals(reviewSrchPg, reviewHtlPg);
 	}
 	
 	public static void clickButton(String buttonName){

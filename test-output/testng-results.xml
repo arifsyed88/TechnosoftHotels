@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="1" total="1" passed="0">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="42050" started-at="2016-12-10T15:21:18Z" finished-at="2016-12-10T15:22:00Z">
+  <suite name="Suite" duration-ms="44890" started-at="2016-12-11T05:36:18Z" finished-at="2016-12-11T05:37:03Z">
     <groups>
     </groups>
-    <test name="ChromeTests" duration-ms="42050" started-at="2016-12-10T15:21:18Z" finished-at="2016-12-10T15:22:00Z">
+    <test name="ChromeTests" duration-ms="44890" started-at="2016-12-11T05:36:18Z" finished-at="2016-12-11T05:37:03Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="setBrowser" is-config="true" duration-ms="13577" started-at="2016-12-10T10:21:18Z" finished-at="2016-12-10T10:21:32Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="setBrowser" is-config="true" duration-ms="15438" started-at="2016-12-11T00:36:18Z" finished-at="2016-12-11T00:36:33Z">
           <params>
             <param index="0">
               <value>
@@ -18,49 +18,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="FAIL" signature="TS02()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="TS02" duration-ms="21866" started-at="2016-12-10T10:21:32Z" finished-at="2016-12-10T10:21:54Z">
-          <exception class="java.lang.AssertionError">
-            <message>
-              <![CDATA[null]]>
-            </message>
-            <full-stacktrace>
-              <![CDATA[java.lang.AssertionError: null
-	at org.testng.Assert.fail(Assert.java:94)
-	at org.testng.Assert.fail(Assert.java:101)
-	at pages.HotelDeals.verifyReviewsRemainConstant(HotelDeals.java:52)
-	at com.hotelsTest.hotels.comTest.sample.TS02(sample.java:33)
-	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
-	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
-	at java.lang.reflect.Method.invoke(Unknown Source)
-	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:100)
-	at org.testng.internal.Invoker.invokeMethod(Invoker.java:646)
-	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:811)
-	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1137)
-	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:129)
-	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:112)
-	at org.testng.TestRunner.privateRun(TestRunner.java:753)
-	at org.testng.TestRunner.run(TestRunner.java:607)
-	at org.testng.SuiteRunner.runTest(SuiteRunner.java:368)
-	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:363)
-	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:321)
-	at org.testng.SuiteRunner.run(SuiteRunner.java:270)
-	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
-	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
-	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1284)
-	at org.testng.TestNG.runSuitesLocally(TestNG.java:1209)
-	at org.testng.TestNG.runSuites(TestNG.java:1124)
-	at org.testng.TestNG.run(TestNG.java:1096)
-	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
-	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:236)
-	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
-]]>
-            </full-stacktrace>
-          </exception> <!-- java.lang.AssertionError -->
+        <test-method status="PASS" signature="TS02()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="TS02" duration-ms="22063" started-at="2016-12-11T00:36:34Z" finished-at="2016-12-11T00:36:56Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TS02 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="tearDown" is-config="true" duration-ms="6339" started-at="2016-12-10T10:21:54Z" finished-at="2016-12-10T10:22:00Z">
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="tearDown" is-config="true" duration-ms="7097" started-at="2016-12-11T00:36:56Z" finished-at="2016-12-11T00:37:03Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
