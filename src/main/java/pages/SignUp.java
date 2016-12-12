@@ -29,5 +29,4 @@ public class SignUp extends BaseClass{
 //		enterData(signUp("LastName"), LastName);
 //		clickButton(signUp("signUpButton"));
 	}
-
 }

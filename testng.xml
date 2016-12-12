@@ -9,12 +9,12 @@
     </classes>
   </test>  Test -->
   
- <test name="ChromeTests">
+<!--  <test name="ChromeTests">
   <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="com.hotelsTest.hotels.comTest.sample"/>
     </classes>
-  </test>  <!--   Test -->
+  </test>  Test -->
  
 <!--  <test name="IETests">
    <parameter name="browserName" value="IE"/>
@@ -23,10 +23,10 @@
     </classes>
   </test>  Test -->
   
-<!-- <test name="SauceLabsTests">
+<test name="SauceLabsTests">
    <parameter name="browserName" value="saucelabs"/>
     <classes>
     <class name="com.hotelsTest.hotels.comTest.sample"/>
     </classes>
-  </test>   Test -->
+  </test> <!--   Test -->
 </suite> <!-- Suite -->

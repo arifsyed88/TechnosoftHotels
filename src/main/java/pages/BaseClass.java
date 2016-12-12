@@ -5,6 +5,7 @@ import java.util.List;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.NoSuchElementException;
+import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import org.testng.Assert;
@@ -40,7 +41,12 @@ public class BaseClass {
 		WebDriverFactory.getDriver().switchTo().window(listOfWindows.get(index));
 	}
 	
-	public void autoComplete(By locater, String inputData){
+	protected WebElement listSelectByIndex(By locater, int index){
+		List<WebElement> elmtList = WebDriverFactory.getDriver().findElements(locater);
+		return elmtList.get(index);
+	}
+	
+	protected void autoComplete(By locater, String inputData){
 		WebDriverFactory.WaitImplicit(5000);
 		List<WebElement> elementList = WebDriverFactory.getDriver().findElements(locater);
 		int indexNum = autoCompleteListIndex(elementList, inputData);
