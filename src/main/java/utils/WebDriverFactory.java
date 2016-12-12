@@ -101,12 +101,6 @@ public class WebDriverFactory {
 		        ExpectedConditions.visibilityOfElementLocated(locater));
 	}
 	
-	public static List<WebElement> WaitUntilVisiblelist(By locater){
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		List<WebElement> element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locater));
-		return element;
-	}
-	
 	public static WebElement webDriverFluentWait(final By locator) {
 		Wait<WebDriver> wait = new FluentWait<WebDriver>(getDriver())
 				.withTimeout(15, TimeUnit.SECONDS)
@@ -126,7 +120,7 @@ public class WebDriverFactory {
 	}
 	
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	@Parameters("browserName")
 	public void setBrowser(String browserName){
 		chooseBrowser(browserName);
@@ -134,7 +128,7 @@ public class WebDriverFactory {
 		driver.manage().window().maximize();
 		}
 	
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void tearDown() {
 		if (driver != null);
 		driver.manage().deleteAllCookies();

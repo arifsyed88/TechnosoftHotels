@@ -1,6 +1,8 @@
 package com.hotelsTest.hotels.comTest;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
 import pages.HomePage;
@@ -11,10 +13,15 @@ import utils.WebDriverFactory;
 
 
 public class sample extends WebDriverFactory {
-
+	
+	@Parameters("browserName")
+	@BeforeMethod
+		public void NavigateToHotelDeals(String browserName){
+		HomePage.goToPage("hotelDeals", browserName);
+	}
 	
 	//@Test(testName = "TS01")
-	public void TS01() {
+		public void TS01() {
 		HomePage.searchDestination("New York");
 		HomePage.clickButton("search");
 		SearchResultsHotels.verifyButton("enterDates", "Enter Dates");
@@ -24,16 +31,21 @@ public class sample extends WebDriverFactory {
 		SearchResultsHotels.verifyButton("numOfNights", "1");
 	}
 	
-	@Test(testName = "TS02")
+	//@Test(testName = "TS02")
 		public void TS02(){
-//		HomePage.clickButton("hotelDeals");
-//		HotelDeals.searchDestination("New York");	
-//		HotelDeals.checkIn();
-//		HotelDeals.checkOut();
-//		HotelDeals.clickButton("search");
-		getDriver().navigate().to("https://www.hotels.com/search.do?resolved-location=CITY%3A1506246%3AUNKNOWN%3AUNKNOWN&destination-id=1506246&q-destination=New%20York,%20New%20York,%20United%20States%20of%20America&q-check-in=2016-12-12&q-check-out=2016-12-13&q-rooms=1&q-room-0-adults=2&q-room-0-children=0");
-		HotelDeals.verifyReviewsRemainConstant("1");
-
+		HotelDeals.searchDestination("New York");	
+		HotelDeals.checkInTom();;
+		HotelDeals.checkOutDayAfterTom();
+		HotelDeals.clickButton("search");
+		HotelDeals.AssertNumOfReviews(1);
+	}
+	
+	@Test(testName = "TS03")
+		public void TS03(){
+		HotelDeals.searchSpecificHotel("New York", "Hilton");
+		HotelDeals.checkInTom();
+		HotelDeals.checkOutDayAfterTom();
+		HotelDeals.clickButton("search");
 		
 	}
 }

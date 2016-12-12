@@ -3,6 +3,9 @@ package pages;
 import java.util.HashMap;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.testng.annotations.Parameters;
+
+import utils.WebDriverFactory;
 
 public class HomePage extends BaseClass{
 	private static HomePage hotels = new HomePage();
@@ -12,6 +15,7 @@ public class HomePage extends BaseClass{
 		elementLocations.put("searchDestinationTextBox", By.cssSelector("#qf-0q-destination"));
 		elementLocations.put("search", By.cssSelector("[type='submit']"));
 		elementLocations.put("hotelDeals", By.cssSelector("#hdr-deals"));
+		elementLocations.put("menu", By.cssSelector(".trigger"));
 		return findElmt(elementLocations.get(key));
 	}
 
@@ -25,6 +29,17 @@ public class HomePage extends BaseClass{
 		hotels.hotelSearchPageElements(buttonName).click();
 	}
     
+	@Parameters("browserName")
+	public static void goToPage(String page, String browserName){
+		if(browserName.equalsIgnoreCase("sauceLabs")){
+			if(hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).isDisplayed()){
+				hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).click();
+			}
+			clickButton("menu");
+			clickButton(page);
+		}
+		
+	}
 	
 	
   

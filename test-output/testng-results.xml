@@ -2,31 +2,42 @@
 <testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="44890" started-at="2016-12-11T05:36:18Z" finished-at="2016-12-11T05:37:03Z">
+  <suite name="Suite" duration-ms="84268" started-at="2016-12-12T17:23:02Z" finished-at="2016-12-12T17:24:26Z">
     <groups>
     </groups>
-    <test name="ChromeTests" duration-ms="44890" started-at="2016-12-11T05:36:18Z" finished-at="2016-12-11T05:37:03Z">
+    <test name="SauceLabsTests" duration-ms="84268" started-at="2016-12-12T17:23:02Z" finished-at="2016-12-12T17:24:26Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="setBrowser" is-config="true" duration-ms="15438" started-at="2016-12-11T00:36:18Z" finished-at="2016-12-11T00:36:33Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@503df2d0]" name="setBrowser" is-config="true" duration-ms="11694" started-at="2016-12-12T12:23:02Z" finished-at="2016-12-12T12:23:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[chrome]]>
+                <![CDATA[saucelabs]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="TS02()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="TS02" duration-ms="22063" started-at="2016-12-11T00:36:34Z" finished-at="2016-12-11T00:36:56Z">
+        <test-method status="PASS" signature="NavigateToHotelDeals(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@503df2d0]" name="NavigateToHotelDeals" is-config="true" duration-ms="6275" started-at="2016-12-12T12:23:14Z" finished-at="2016-12-12T12:23:20Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[saucelabs]]>
+              </value>
+            </param>
+          </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TS02 -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@507d64aa]" name="tearDown" is-config="true" duration-ms="7097" started-at="2016-12-11T00:36:56Z" finished-at="2016-12-11T00:37:03Z">
+        </test-method> <!-- NavigateToHotelDeals -->
+        <test-method status="PASS" signature="TS03()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@503df2d0]" name="TS03" duration-ms="18037" started-at="2016-12-12T12:23:20Z" finished-at="2016-12-12T12:23:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TS03 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@503df2d0]" name="tearDown" is-config="true" duration-ms="48111" started-at="2016-12-12T12:23:38Z" finished-at="2016-12-12T12:24:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
       </class> <!-- com.hotelsTest.hotels.comTest.sample -->
-    </test> <!-- ChromeTests -->
+    </test> <!-- SauceLabsTests -->
   </suite> <!-- Suite -->
 </testng-results>

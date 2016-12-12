@@ -21,38 +21,57 @@ public class HotelDeals extends BaseClass{
 		return findElmt(elementLocations.get(key));
 	}
 	
-	public static void searchDestination(String city){
-		deals.enterData(deals.hDealsElements("searchDestinationTextBox"), city);
-		deals.autoComplete(By.cssSelector(".autosuggest-city .autosuggest-category-result"), city);
+	private By elmtListLocations(String key){
+		HashMap<String, By> elmntList = new HashMap<String, By>();
+		elmntList.put("searchPageReviews", By.cssSelector(".full-view"));
+		elmntList.put("searchCities", By.cssSelector(".autosuggest-city .autosuggest-category-result"));
+		elmntList.put("searchHotels", By.cssSelector(".autosuggest-hotel .autosuggest-category-result"));
+		return elmntList.get(key);
 	}
 	
-	public static void checkIn(){
+	public static void searchDestination(String city){
+		deals.enterData(deals.hDealsElements("searchDestinationTextBox"), city);
+		deals.autoComplete(deals.elmtListLocations("searchCities"), city);
+	}
+	
+	public static void searchSpecificHotel(String city, String hotel){
+		deals.enterData(deals.hDealsElements("searchDestinationTextBox"), city);
+		deals.autoComplete(deals.elmtListLocations("searchHotels"), hotel);
+	}
+	
+	public static void checkInTom(){
 		Calender.travelDate(true, deals.hDealsElements("checkIn"));
 	}
 	
-	public static void checkOut(){
+	public static void checkOutDayAfterTom(){
 		Calender.travelDate(true, deals.hDealsElements("checkOut"));
 	}
 	
-	public static void verifyTotalReviewsofSelection(String index, String expectedText){
-		deals.verifyMessage(deals.findElmt(By.xpath("//li[" + index + "]//span[@class='ta-total-reviews']")), expectedText);
+	public static void checkoutGuestReviewsofSelection(int index){
+		deals.listSelectByIndex(deals.elmtListLocations("searchPageReviews"), index).click();
 	}
 	
-	public static void checkoutGuestReviewsofSelection(String index){
-		deals.actionClick(deals.findElmt(By.xpath("//li[" + index + "]//a[@class='full-view']")));
-	}
-	
-	public static void verifyReviewsRemainConstant(String index){
-		String searchPageReviews = deals.findElmt(By.xpath("//li[" + index + "]//a[@class='full-view']")).getText();
+	public static void AssertNumOfReviews(int index){
+		int reviewsSrchPg, reviewHtlPg;
+		
+		String searchPageReviews = deals.listSelectByIndex(deals.elmtListLocations("searchPageReviews"), index).getText();
 		String[] split1 = searchPageReviews.split(" ");
-		String[] split2 = split1[0].split(",");
-		int reviewSrchPg = Integer.parseInt(split2[0]+split2[1]);
-		deals.findElmt(By.xpath("//li[" + index + "]//a[@class='full-view']")).click();
+		
+		if(split1[0].length()>3){
+			String[] split2 = split1[0].split(",");
+			reviewsSrchPg = Integer.parseInt(split2[0]+split2[1]);
+		}else{
+			 reviewsSrchPg = Integer.parseInt(split1[0]);
+		}
+		
+		checkoutGuestReviewsofSelection(index);
 		deals.switchToWidnow(1);
 		WebDriverFactory.WaitImplicit(5000);
-		String detailedPageReviews = deals.findElmt(By.cssSelector(".cat>span")).getText();
-		int reviewHtlPg = Integer.parseInt(detailedPageReviews.replace("(", "").replace(")", ""));
-		Assert.assertEquals(reviewSrchPg, reviewHtlPg);
+		
+		String allReviewsforHotel = deals.findElmt(By.cssSelector(".cat>span")).getText();
+		reviewHtlPg = Integer.parseInt(allReviewsforHotel.replace("(", "").replace(")", ""));
+		
+		Assert.assertEquals(reviewsSrchPg, reviewHtlPg);
 	}
 	
 	public static void clickButton(String buttonName){
