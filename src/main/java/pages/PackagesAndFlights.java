@@ -10,29 +10,29 @@ import utils.WebDriverFactory;
 
 public class PackagesAndFlights extends BaseClass {
 	
-	private By elementLocations(String key){
-		HashMap<String, By> location= new HashMap<String, By>(); 
-		location.put("Flight", By.id("tab-flight-tab"));
-		location.put("FlightAndHotel", By.id("tab-flightHotel-tab"));
-		location.put("ThingsToDo", By.id("tab-activity-tab"));
-		location.put("RoundTrip", By.id("flight-type-roundtrip-label"));
-		location.put("MultipleDestination", By.id("flight-type-multi-dest-label"));
-		location.put("FlyFrom", By.id("flight-origin"));
-		location.put("FlyFrom2", By.id("flight-2-origin"));
-		location.put("FlyTo", By.id("flight-destination"));
-		location.put("FlyTo2", By.id("flight-2-destination"));
-		location.put("Departing", By.id("flight-departing"));
-		location.put("Departing2", By.id("flight-2-departing"));
-		location.put("Returning", By.id("flight-returning"));
-		location.put("Adults", By.id("flight-adults"));
-		location.put("Children", By.id("flight-children"));
-		location.put("AddHotel", By.id("flight-add-hotel-checkbox"));
-		location.put("Search", By.id("search-button"));
-		location.put("PageHeader", By.cssSelector("span.title-city-text"));
+	private WebElement PackageAndFlightsElements(String key){
+		HashMap<String, By> elementLocation= new HashMap<String, By>(); 
+		elementLocation.put("Flight", By.cssSelector("#tab-flight-tab"));
+		elementLocation.put("FlightAndHotel", By.cssSelector("#tab-flightHotel-tab"));
+		elementLocation.put("ThingsToDo", By.cssSelector("#tab-activity-tab"));
+		elementLocation.put("RoundTrip", By.cssSelector("#flight-type-roundtrip-label"));
+		elementLocation.put("MultipleDestination", By.cssSelector("#flight-type-multi-dest-label"));
+		elementLocation.put("FlyFrom", By.cssSelector("#flight-origin"));
+		elementLocation.put("FlyFrom2", By.cssSelector("#flight-2-origin"));
+		elementLocation.put("FlyTo", By.cssSelector("#flight-destination"));
+		elementLocation.put("FlyTo2", By.cssSelector("#flight-2-destination"));
+		elementLocation.put("Departing", By.cssSelector("#flight-departing"));
+		elementLocation.put("Departing2", By.cssSelector("#flight-2-departing"));
+		elementLocation.put("Returning", By.cssSelector("#flight-returning"));
+		elementLocation.put("Adults", By.cssSelector("#flight-adults"));
+		elementLocation.put("Children", By.cssSelector("#flight-children"));
+		elementLocation.put("AddHotel", By.cssSelector("#flight-add-hotel-checkbox"));
+		elementLocation.put("Search", By.cssSelector("#search-button"));
+		elementLocation.put("PageHeader", By.cssSelector("#span.title-city-text"));
 		
 	
 		
-		return location.get(key);
+		return findElmt(elementLocation.get(key));
 	}
 	
 	private String UserInfo(String key){

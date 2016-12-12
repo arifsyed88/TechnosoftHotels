@@ -102,7 +102,7 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.sample" hash-for-method="TS01">TS01</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.sample" hash-for-method="TS02">TS02</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -125,9 +125,9 @@
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TS01">
-                  </a> <!-- TS01 -->
-                  <span class="method-name">TS01</span>
+                  <a name="TS02">
+                  </a> <!-- TS02 -->
+                  <span class="method-name">TS02</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -142,12 +142,12 @@
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;SauceLabsTests&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;saucelabs&quot;/&gt;
+  &lt;test name=&quot;ChromeTests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.hotelsTest.hotels.comTest.sample&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SauceLabsTests --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +159,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SauceLabsTests (1 class)</span>
+                <span class="test-name">ChromeTests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -187,14 +187,14 @@ data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
 data.addRows(1);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TS01')
+data.setCell(0, 1, 'TS02')
 data.setCell(0, 2, 'com.hotelsTest.hotels.comTest.sample')
-data.setCell(0, 3, 11048);
+data.setCell(0, 3, 61364);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 11 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -222,16 +222,16 @@ return data;
             <div class="chronological-class">
               <div class="chronological-class-name">com.hotelsTest.hotels.comTest.sample</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setBrowser(saucelabs)</span>
+                <span class="method-name">setBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="test-method">
-                <span class="method-name">TS01</span>
-                <span class="method-start">9210 ms</span>
+                <span class="method-name">TS02</span>
+                <span class="method-start">15872 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">20275 ms</span>
+                <span class="method-start">77245 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

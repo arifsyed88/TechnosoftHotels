@@ -81,7 +81,7 @@ public class WebDriverFactory {
     		case "saucelabs":
     			try {
 					DesiredCapabilities caps = DesiredCapabilities.chrome();
-					    caps.setCapability("platform", "Windows XP");
+					    caps.setCapability("platform", "Windows 10");
 					    caps.setCapability("version", "43.0");
 					    driver = new RemoteWebDriver(new URL(SLURL), caps);
 				} catch (MalformedURLException e) {

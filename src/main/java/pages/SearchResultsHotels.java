@@ -29,7 +29,7 @@ public class SearchResultsHotels extends BaseClass{
 	}
 	
 	public static void clickButton(String buttonName){
-		srchRslts.click(srchRslts.searchResultsElements(buttonName));
+		srchRslts.actionClick(srchRslts.searchResultsElements(buttonName));
 	}
 	
 	public static void checkIn(){
