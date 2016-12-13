@@ -24,6 +24,10 @@ public class SearchResultsHotels extends CommonActions{
 		elementLocations.put("checkOut", By.cssSelector("#overlay-q-localised-check-out"));
 		elementLocations.put("numOfNights", By.xpath(".//*[@id='overlay-q-nights']//span[contains(@class,'num-nights')]"));
 		elementLocations.put("calendarContinue",By.cssSelector(".cta.widget-overlay-ok"));
+		elementLocations.put("header", By.cssSelector(".summary>h1"));
+		elementLocations.put("starRating", By.cssSelector("[data-filter-name='f-star-rating']"));
+		elementLocations.put("neighborhood", By.xpath(".//*[@id='applied-filters']//li[2]/strong"));
+		elementLocations.put("noHotelsMessage", By.cssSelector(".info.unavailable-info"));
 		return findElmt(elementLocations.get(key));
 	}
 	
@@ -32,6 +36,8 @@ public class SearchResultsHotels extends CommonActions{
 		elmntList.put("searchPageReviews", By.cssSelector(".full-view"));
 		elmntList.put("searchCities", By.cssSelector(".autosuggest-city .autosuggest-category-result"));
 		elmntList.put("searchHotels", By.cssSelector(".autosuggest-hotel .autosuggest-category-result"));
+		elmntList.put("starRating", By.cssSelector("[name='f-star-rating'][type='checkbox']"));
+		elmntList.put("neighborhood", By.xpath("//*[@id='filter-neighbourhood']//label"));
 		return elmntList.get(key);
 	}
 	
@@ -58,6 +64,38 @@ public class SearchResultsHotels extends CommonActions{
 		Assert.assertEquals(reviewsSrchPg, reviewHtlPg);
 	}
 	
+	public static void chooseStarRating(int rating){
+		rating = rating-1;
+		srchRslts.listSelectByIndex(srchRslts.elmtListLocations("starRating"), rating);
+	}
+	
+	public static void chooseNeighborhood(String neighborhood){
+		List<WebElement> neighborhoods = WebDriverFactory.getDriver().findElements(By.cssSelector("[name='f-nid']"));
+		List<WebElement> neighborhoodNames = WebDriverFactory.getDriver().findElements(srchRslts.elmtListLocations("neighborhood"));
+		for(WebElement nhoodName :neighborhoodNames){
+			if(nhoodName.getText().equalsIgnoreCase(neighborhood)){
+				int name = neighborhoodNames.indexOf(nhoodName);
+				neighborhoods.get(name).click();
+			}
+		}
+	}
+	
+	public static void verifyFilters(String chosenFilter, String expected){
+		String filter;
+		if(chosenFilter.equalsIgnoreCase("starRating")){
+			filter = srchRslts.findElmt(By.xpath("//button[@data-filter-name='f-star-rating']")).getAttribute("data-filter-value").toString();
+			System.out.println(filter);
+		}else if(chosenFilter.equalsIgnoreCase("neiborhood")){
+			filter = srchRslts.searchResultsElements("neighborhood").getText();
+			System.out.println(filter);
+		}
+		else{
+			filter = srchRslts.searchResultsElements(chosenFilter).getText();
+			System.out.println(filter);
+		}
+		Assert.assertEquals(filter, expected);
+	}
+	
 	public static void checkoutGuestReviewsofSelection(int index){
 		srchRslts.listSelectByIndex(srchRslts.elmtListLocations("searchPageReviews"), index).click();
 	}
@@ -71,11 +109,11 @@ public class SearchResultsHotels extends CommonActions{
 	}
 	
 	public static void checkIn(){
-		Calender.travelDate(true, srchRslts.searchResultsElements("checkIn"));
+		CommonActions.checkInTom(srchRslts.searchResultsElements("checkIn"));
 	}
 	
 	public static void checkOut(){
-		Calender.travelDate(false, srchRslts.searchResultsElements("checkOut"));
+		CommonActions.checkOutDayAfterTom(srchRslts.searchResultsElements("checkOut"));
 	}
 
 }

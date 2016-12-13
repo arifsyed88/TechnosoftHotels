@@ -42,17 +42,19 @@ public class CommonActions extends BaseClass{
 	
 	protected static void selectAmtOfRooms(int numOfRooms, WebElement element){
 		Select rooms = new Select(element);
+		numOfRooms = numOfRooms-1;
 		if(numOfRooms>0 && numOfRooms<9){
-			rooms.selectByValue(String.valueOf(numOfRooms));
+			rooms.selectByIndex(numOfRooms);
 		}else if(numOfRooms>9){
-			rooms.selectByValue("9+");
+			rooms.selectByIndex(8);;
 		}else if(numOfRooms==0 || numOfRooms<0){
-			rooms.selectByValue("1");
+			rooms.selectByIndex(0);
 		}
 	}
 	
-	private static void selectAmtOfKids(int index, int roomNum ,String page){
+	protected static void selectAmtOfKids(int index, int roomNum ,String page){
 		Random rdm = new Random();
+		roomNum= roomNum-1;
 		Select childAge;
 		Select child;
 		if(page.equalsIgnoreCase("packagesAndFlights")){
@@ -78,8 +80,10 @@ public class CommonActions extends BaseClass{
 		}
 	}
 	
-	private static void selectAmtOfAdults(int numOfAdults,int roomNum, String page){
+	protected static void selectAmtOfAdults(int numOfAdults,int roomNum, String page){
 			Select adult;
+			roomNum= roomNum-1;
+			numOfAdults = numOfAdults-1;
 			if(page.equalsIgnoreCase("packagesAndFlights")){
 				adult = new Select(common.findElmt(By.cssSelector("#flight-adults")));
 			}else if(page.equalsIgnoreCase("hotelDeals")){
@@ -87,7 +91,13 @@ public class CommonActions extends BaseClass{
 			}else{
 				adult = new Select(common.findElmt(By.cssSelector("#qf-0q-room-"+roomNum+"-adults")));
 			}
-			adult.selectByValue(String.valueOf(numOfAdults));
+			if(numOfAdults==0 || numOfAdults<0){
+				adult.selectByIndex(0);
+			}else if(numOfAdults>8){
+				adult.selectByIndex(7);
+			}else{
+				adult.selectByIndex(numOfAdults);
+			}
 	}
 	
 	protected static void assignMembersToRooms(int roomNum, int adultNum, int kidNum, String page){

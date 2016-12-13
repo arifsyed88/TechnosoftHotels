@@ -30,7 +30,6 @@ public class HotelDeals extends CommonActions{
 		HashMap<String, By> elmntList = new HashMap<String, By>();
 		elmntList.put("searchCities", By.cssSelector(".autosuggest-city .autosuggest-category-result"));
 		elmntList.put("searchHotels", By.cssSelector(".autosuggest-hotel .autosuggest-category-result"));
-		elmntList.put("childSelect", By.cssSelector("#qf-1q-room-0-children"));
 		elmntList.put("roomSelect", By.cssSelector("#qf-1q-rooms"));
 		return elmntList.get(key);
 	}
@@ -70,24 +69,9 @@ public class HotelDeals extends CommonActions{
 		CommonActions.selectAmtOfRooms(numOfRooms, deals.findElmt(deals.elmtListLocations("roomSelect")));
 	}
 	
-	public static void selectAmtOfKids(int index){
-		Random rdm = new Random();
-		for(int i=0; i<index; i++){
-			Select childAge = new Select(deals.findElmt(By.cssSelector("#qf-1q-room-0-child-"+ i+ "-age")));
-			int random = rdm.nextInt((19-1)+1)+1;
-			childAge.selectByIndex(random);
-		}
-		
-	}
 	
-	public static void selectAmtOfAdults(int numOfAdults){
-		if(roomAmt>0 && roomAmt<9){
-			for(int i=1; i<roomAmt; i++){
-				
-			Select adults = new Select(deals.findElmt(By.cssSelector("#qf-1q-room-" +i + "-adults")));
-			
-			}
-		}
+	public static void assignMembersToRooms(int roomNum, int adultNum, int kidNum){
+		CommonActions.assignMembersToRooms(roomNum, adultNum, kidNum, "hotelDeals");
 	}
 	
 	public static void clickButton(String buttonName){

@@ -59,20 +59,32 @@ public class sample extends WebDriverFactory {
 		
 	//@Test(testName = "TS04")
 		public void TS04(){
-			HotelDeals.searchSpecificHotel("New York", "Marriot");
-			HotelDeals.checkInTom();
-			HotelDeals.verifyAutoUpdateOfDate();
-			HotelDeals.clickButton("search");
-			BookingPage.verifyOtherSitesAreDisplayed();
+		HotelDeals.searchSpecificHotel("New York", "Marriot");
+		HotelDeals.checkInTom();
+		HotelDeals.verifyAutoUpdateOfDate();
+		HotelDeals.clickButton("search");
+		BookingPage.verifyOtherSitesAreDisplayed();
 		}
 		
-	 @Test(testName = "TS05")
+	// @Test(testName = "TS05")
 	 	public void TS05(){
 		 HotelDeals.searchDestination("New York");
 		 HotelDeals.checkInTom();
 		 HotelDeals.checkOutDayAfterTom();
 		 HotelDeals.selectAmtOfRooms(1);
-		 
-		 HotelDeals.selectAmtOfKids(1);
+		 HotelDeals.assignMembersToRooms(1, 3, 1);
+		 HotelDeals.clickButton("search");
+		 SearchResultsHotels.verifyButton("header", "New York, New York, USA");
 	 }
+	 	
+	 @Test(testName = "TS06")
+	 	public void TS06(){
+	 	 HotelDeals.searchDestination("Los Angeles");
+	 	 HotelDeals.clickButton("search");
+	 	 SearchResultsHotels.chooseStarRating(1);
+	 	 SearchResultsHotels.chooseNeighborhood("Los Angeles");
+	 	 SearchResultsHotels.verifyFilters("starRating", "1");
+	 	 SearchResultsHotels.verifyButton("nieghborhood", "Downtown Los Angeles");
+	 	 SearchResultsHotels.verifyButton("noHotelsMessage", "Sorry, there are no hotels that match your search");
+	 	}
 }
