@@ -3,6 +3,7 @@ package com.hotelsTest.hotels.comTest;
 import java.awt.print.Book;
 
 import org.openqa.selenium.By;
+import org.testng.annotations.AfterMethod;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
@@ -17,16 +18,11 @@ import utils.WebDriverFactory;
 
 public class sample extends WebDriverFactory {
 	
-	@Parameters("browserName")
-	@BeforeMethod
-		public void NavigateToHotelDeals(String browserName){
-		HomePage.goToPage("hotelDeals", browserName);
-	}
 	
 	@Test(testName = "TS01")
 		public void TS01() {
-		HomePage.searchDestination("New York");
-		HomePage.clickButton("search");
+		HotelDeals.searchDestination("New York","New York");
+		HotelDeals.clickButton("search");
 		SearchResultsHotels.verifyButton("enterDates", "Enter Dates");
 		SearchResultsHotels.clickButton("enterDates");
 		SearchResultsHotels.checkIn();
@@ -36,7 +32,7 @@ public class sample extends WebDriverFactory {
 	
 	@Test(testName = "TS02")
 		public void TS02(){
-		HotelDeals.searchDestination("New York");	
+		HotelDeals.searchDestination("New York","New York");	
 		HotelDeals.checkInTom();;
 		HotelDeals.checkOutDayAfterTom();
 		HotelDeals.clickButton("search");
@@ -68,7 +64,7 @@ public class sample extends WebDriverFactory {
 		
 	 @Test(testName = "TS05")
 	 	public void TS05(){
-		 HotelDeals.searchDestination("New York");
+		 HotelDeals.searchDestination("New York", "New York");
 		 HotelDeals.checkInTom();
 		 HotelDeals.checkOutDayAfterTom();
 		 HotelDeals.selectAmtOfRooms(1);
@@ -79,7 +75,7 @@ public class sample extends WebDriverFactory {
 	 	
 	 @Test(testName = "TS06")
 	 	public void TS06(){
-	 	 HotelDeals.searchDestination("Los Angeles");
+	 	 HotelDeals.searchDestination("California", "Los Angeles");
 	 	 HotelDeals.clickButton("search");
 	 	 SearchResultsHotels.chooseStarRating(1);
 	 	 SearchResultsHotels.chooseNeighborhood("Los Angeles");

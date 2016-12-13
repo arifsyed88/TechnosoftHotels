@@ -34,8 +34,8 @@ public class HotelDeals extends CommonActions{
 		return elmntList.get(key);
 	}
 	
-	public static void searchDestination(String city){
-		deals.enterData(deals.hDealsElements("searchDestinationTextBox"), city);
+	public static void searchDestination(String state, String city){
+		deals.enterData(deals.hDealsElements("searchDestinationTextBox"), state);
 		CommonActions.autoComplete(deals.elmtListLocations("searchCities"), city);
 	}
 	
