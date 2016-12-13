@@ -1,10 +1,13 @@
 package com.hotelsTest.hotels.comTest;
 
+import java.awt.print.Book;
+
 import org.openqa.selenium.By;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 
+import pages.BookingPage;
 import pages.HomePage;
 import pages.HotelDeals;
 import pages.SearchResultsHotels;
@@ -37,15 +40,39 @@ public class sample extends WebDriverFactory {
 		HotelDeals.checkInTom();;
 		HotelDeals.checkOutDayAfterTom();
 		HotelDeals.clickButton("search");
-		HotelDeals.AssertNumOfReviews(1);
+		SearchResultsHotels.AssertNumOfReviews(1);
 	}
 	
-	@Test(testName = "TS03")
+	//@Test(testName = "TS03")
 		public void TS03(){
 		HotelDeals.searchSpecificHotel("New York", "Hilton");
 		HotelDeals.checkInTom();
 		HotelDeals.checkOutDayAfterTom();
 		HotelDeals.clickButton("search");
-		
+		BookingPage.getPriceofHotel();
+		BookingPage.clickButton("priceWatch");
+		BookingPage.verifyAndMatchPrice();
+		BookingPage.enterEmail("Techsoft@gmail.com");
+		BookingPage.clickButton("subscribe");
+		BookingPage.ConfirmMessage("We’ll watch the rate on these dates:");
 	}
+		
+	//@Test(testName = "TS04")
+		public void TS04(){
+			HotelDeals.searchSpecificHotel("New York", "Marriot");
+			HotelDeals.checkInTom();
+			HotelDeals.verifyAutoUpdateOfDate();
+			HotelDeals.clickButton("search");
+			BookingPage.verifyOtherSitesAreDisplayed();
+		}
+		
+	 @Test(testName = "TS05")
+	 	public void TS05(){
+		 HotelDeals.searchDestination("New York");
+		 HotelDeals.checkInTom();
+		 HotelDeals.checkOutDayAfterTom();
+		 HotelDeals.selectAmtOfRooms(1);
+		 
+		 HotelDeals.selectAmtOfKids(1);
+	 }
 }

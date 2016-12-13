@@ -5,9 +5,9 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.testng.annotations.Parameters;
 
-import utils.WebDriverFactory;
+import generalActions.CommonActions;
 
-public class HomePage extends BaseClass{
+public class HomePage extends CommonActions{
 	private static HomePage hotels = new HomePage();
 	
 	private WebElement hotelSearchPageElements(String key){

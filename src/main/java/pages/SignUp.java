@@ -4,7 +4,10 @@ import java.util.HashMap;
 
 import org.openqa.selenium.By;
 
-public class SignUp extends BaseClass{
+import generalActions.BaseClass;
+import generalActions.CommonActions;
+
+public class SignUp extends CommonActions{
 
  public By signUp(String key){	
 	HashMap<String, By> signUpElement = new HashMap<String, By>();

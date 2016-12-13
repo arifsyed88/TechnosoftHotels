@@ -1,4 +1,4 @@
-package pages;
+package generalActions;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -46,20 +46,4 @@ public class BaseClass {
 		return elmtList.get(index);
 	}
 	
-	protected void autoComplete(By locater, String inputData){
-		WebDriverFactory.WaitImplicit(5000);
-		List<WebElement> elementList = WebDriverFactory.getDriver().findElements(locater);
-		int indexNum = autoCompleteListIndex(elementList, inputData);
-		WebDriverFactory.WaitImplicit(5000);
-		elementList.get(indexNum).click();
-	}
-	
-	private int autoCompleteListIndex(List<WebElement> list, String input){
-      for(WebElement element : list){
-          if(element.getText().contains(input)){
-              return list.indexOf(element);
-          }
-      }
-      return 0;
-  }
 }
