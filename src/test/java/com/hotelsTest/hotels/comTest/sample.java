@@ -23,7 +23,7 @@ public class sample extends WebDriverFactory {
 		HomePage.goToPage("hotelDeals", browserName);
 	}
 	
-	//@Test(testName = "TS01")
+	@Test(testName = "TS01")
 		public void TS01() {
 		HomePage.searchDestination("New York");
 		HomePage.clickButton("search");
@@ -34,7 +34,7 @@ public class sample extends WebDriverFactory {
 		SearchResultsHotels.verifyButton("numOfNights", "1");
 	}
 	
-	//@Test(testName = "TS02")
+	@Test(testName = "TS02")
 		public void TS02(){
 		HotelDeals.searchDestination("New York");	
 		HotelDeals.checkInTom();;
@@ -43,7 +43,7 @@ public class sample extends WebDriverFactory {
 		SearchResultsHotels.AssertNumOfReviews(1);
 	}
 	
-	//@Test(testName = "TS03")
+	@Test(testName = "TS03")
 		public void TS03(){
 		HotelDeals.searchSpecificHotel("New York", "Hilton");
 		HotelDeals.checkInTom();
@@ -57,7 +57,7 @@ public class sample extends WebDriverFactory {
 		BookingPage.ConfirmMessage("We’ll watch the rate on these dates:");
 	}
 		
-	//@Test(testName = "TS04")
+	@Test(testName = "TS04")
 		public void TS04(){
 		HotelDeals.searchSpecificHotel("New York", "Marriot");
 		HotelDeals.checkInTom();
@@ -66,7 +66,7 @@ public class sample extends WebDriverFactory {
 		BookingPage.verifyOtherSitesAreDisplayed();
 		}
 		
-	// @Test(testName = "TS05")
+	 @Test(testName = "TS05")
 	 	public void TS05(){
 		 HotelDeals.searchDestination("New York");
 		 HotelDeals.checkInTom();

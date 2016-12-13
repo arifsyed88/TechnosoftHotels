@@ -128,28 +128,10 @@
                   <a name="TS06">
                   </a> <!-- TS06 -->
                   <span class="method-name">TS06</span>
-                  <div class="stack-trace">org.openqa.selenium.NoSuchElementException: no such element
-  (Session info: chrome=43.0.2357.65)
-  (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.19 seconds
-For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
-Build info: version: &apos;3.0.1&apos;, revision: &apos;1969d75&apos;, time: &apos;2016-10-18 09:49:13 -0700&apos;
-System info: host: &apos;DESKTOP-QI99IL6&apos;, ip: &apos;192.168.12.207&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_112&apos;
-Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir920_15194}, takesHeapSnapshot=true, hasMetadata=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.65, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=ae4dabe3e50b4089983f4b8b7ec1429c, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: ae4dabe3e50b4089983f4b8b7ec1429c
-*** Element info: {Using=xpath, value=//button[@data-filter-name=&apos;f-star-rating&apos;]}
-	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:216)
-	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:168)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:635)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:368)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElementByXPath(RemoteWebDriver.java:473)
-	at org.openqa.selenium.By$ByXPath.findElement(By.java:361)
-	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:360)
-	at generalActions.BaseClass.findElmt(BaseClass.java:19)
-	at pages.SearchResultsHotels.verifyFilters(SearchResultsHotels.java:86)
+                  <div class="stack-trace">java.lang.AssertionError: expected [1] but found []
+	at pages.SearchResultsHotels.verifyFilters(SearchResultsHotels.java:100)
 	at com.hotelsTest.hotels.comTest.sample.TS06(sample.java:86)
-... Removed 29 stack frames
+... Removed 31 stack frames
 </div> <!-- stack-trace -->
                 </div> <!-- method-content -->
               </div> <!-- method -->
@@ -212,12 +194,12 @@ data.addRows(1);
 data.setCell(0, 0, 0)
 data.setCell(0, 1, 'TS06')
 data.setCell(0, 2, 'com.hotelsTest.hotels.comTest.sample')
-data.setCell(0, 3, 17068);
+data.setCell(0, 3, 10611);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 17 seconds</span>
+              <span class="suite-total-time">Total running time: 10 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -250,17 +232,17 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
                 <span class="method-name">NavigateToHotelDeals(saucelabs)</span>
-                <span class="method-start">9046 ms</span>
+                <span class="method-start">10790 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
                 <img src="failed.png">
                 </img>
                 <span class="method-name">TS06</span>
-                <span class="method-start">18314 ms</span>
+                <span class="method-start">19790 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">35413 ms</span>
+                <span class="method-start">30419 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

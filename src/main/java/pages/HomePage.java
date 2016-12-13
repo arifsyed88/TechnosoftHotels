@@ -37,7 +37,10 @@ public class HomePage extends CommonActions{
 //			}
 			clickButton("menu");
 			clickButton(page);
+		}else{
+			clickButton(page);
 		}
+		
 		
 	}
 	

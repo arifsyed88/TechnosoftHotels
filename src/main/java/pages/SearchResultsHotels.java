@@ -25,7 +25,7 @@ public class SearchResultsHotels extends CommonActions{
 		elementLocations.put("numOfNights", By.xpath(".//*[@id='overlay-q-nights']//span[contains(@class,'num-nights')]"));
 		elementLocations.put("calendarContinue",By.cssSelector(".cta.widget-overlay-ok"));
 		elementLocations.put("header", By.cssSelector(".summary>h1"));
-		elementLocations.put("starRating", By.cssSelector("[data-filter-name='f-star-rating']"));
+		elementLocations.put("starRating", By.cssSelector(".active [name='f-star-rating']"));
 		elementLocations.put("neighborhood", By.xpath(".//*[@id='applied-filters']//li[2]/strong"));
 		elementLocations.put("noHotelsMessage", By.cssSelector(".info.unavailable-info"));
 		return findElmt(elementLocations.get(key));
@@ -83,7 +83,11 @@ public class SearchResultsHotels extends CommonActions{
 	public static void verifyFilters(String chosenFilter, String expected){
 		String filter;
 		if(chosenFilter.equalsIgnoreCase("starRating")){
-			filter = srchRslts.findElmt(By.xpath("//button[@data-filter-name='f-star-rating']")).getAttribute("data-filter-value").toString();
+			//filter = srchRslts.searchResultsElements("starRating").getAttribute("value");
+			srchRslts.hoverOver(srchRslts.findElmt(By.cssSelector(".icon.icon-star")));
+			WebDriverFactory.WaitImplicit(6000);
+			filter = srchRslts.findElmt(By.xpath(".//*[@class='star-rating widget-tooltip widget-tooltip-tr widget-star-rating-overlay']//descendant::span[2]")).getText();
+			
 			System.out.println(filter);
 		}else if(chosenFilter.equalsIgnoreCase("neiborhood")){
 			filter = srchRslts.searchResultsElements("neighborhood").getText();

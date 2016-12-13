@@ -23,8 +23,12 @@ public class BaseClass {
 		element.click();
 	}
 	
-	protected void actionClick(WebElement element){
-		actions.moveToElement(element).click().build().perform();
+	protected void hoverOver(WebElement element){
+		actions.moveToElement(element).build().perform();
+	}
+	
+	protected void actionClick(WebElement elment){
+		actions.moveToElement(elment).click().build().perform();
 	}
 	
 	protected void enterData(WebElement element, String inputData) {
