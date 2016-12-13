@@ -14,7 +14,7 @@ public class RetryAnalyzer implements IRetryAnalyzer {
 
 	public boolean retry(ITestResult result) {
 		if (ITestResult.FAILURE == result.getStatus()){
-		Attachments.createAttachment();
+			Attachments.createAttachment();
 		}else if(ITestResult.SKIP == result.getStatus()){
 			Attachments.createAttachment();
 		}

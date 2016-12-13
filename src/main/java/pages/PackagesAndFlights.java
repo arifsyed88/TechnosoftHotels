@@ -6,9 +6,11 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
+import generalActions.BaseClass;
+import generalActions.CommonActions;
 import utils.WebDriverFactory;
 
-public class PackagesAndFlights extends BaseClass {
+public class PackagesAndFlights extends CommonActions {
 	
 	private By elementLocations(String key){
 		HashMap<String, By> location= new HashMap<String, By>(); 

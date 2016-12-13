@@ -81,7 +81,7 @@ public class WebDriverFactory {
     		case "saucelabs":
     			try {
 					DesiredCapabilities caps = DesiredCapabilities.chrome();
-					    caps.setCapability("platform", "Windows XP");
+					    caps.setCapability("platform", "Windows 10");
 					    caps.setCapability("version", "43.0");
 					    driver = new RemoteWebDriver(new URL(SLURL), caps);
 				} catch (MalformedURLException e) {
@@ -99,12 +99,6 @@ public class WebDriverFactory {
 		WebDriverWait wait = new WebDriverWait(driver, 10);
 		WebElement element = wait.until(
 		        ExpectedConditions.visibilityOfElementLocated(locater));
-	}
-	
-	public static List<WebElement> WaitUntilVisiblelist(By locater){
-		WebDriverWait wait = new WebDriverWait(driver, 10);
-		List<WebElement> element = wait.until(ExpectedConditions.visibilityOfAllElementsLocatedBy(locater));
-		return element;
 	}
 	
 	public static WebElement webDriverFluentWait(final By locator) {
@@ -126,7 +120,7 @@ public class WebDriverFactory {
 	}
 	
 
-	@BeforeTest
+	@BeforeTest(alwaysRun = true)
 	@Parameters("browserName")
 	public void setBrowser(String browserName){
 		chooseBrowser(browserName);
@@ -134,7 +128,7 @@ public class WebDriverFactory {
 		driver.manage().window().maximize();
 		}
 	
-	@AfterTest
+	@AfterTest(alwaysRun = true)
 	public void tearDown() {
 		if (driver != null);
 		driver.manage().deleteAllCookies();

@@ -5,7 +5,7 @@
     <classes>
       <class name="com.hotelsTest.hotels.comTest.sample">
         <methods>
-          <include name="testMe"/>
+          <include name="TS02"/>
         </methods>
       </class> <!-- com.hotelsTest.hotels.comTest.sample -->
     </classes>

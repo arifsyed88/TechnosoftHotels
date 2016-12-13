@@ -8,8 +8,9 @@
       <class name="com.hotelsTest.hotels.comTest.sample">
         <methods>
           <include name="setBrowser"/>
+          <include name="NavigateToHotelDeals"/>
+          <include name="TS04"/>
           <include name="tearDown"/>
-          <include name="testMe"/>
         </methods>
       </class> <!-- com.hotelsTest.hotels.comTest.sample -->
     </classes>

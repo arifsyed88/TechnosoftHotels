@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="2" passed="2">
+<testng-results skipped="0" failed="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Suite" duration-ms="10960" started-at="2016-12-09T04:10:56Z" finished-at="2016-12-09T04:11:07Z">
+  <suite name="Suite" duration-ms="24460" started-at="2016-12-12T21:23:57Z" finished-at="2016-12-12T21:24:21Z">
     <groups>
     </groups>
-    <test name="SauceLabsTests" duration-ms="10960" started-at="2016-12-09T04:10:56Z" finished-at="2016-12-09T04:11:07Z">
+    <test name="SauceLabsTests" duration-ms="24460" started-at="2016-12-12T21:23:57Z" finished-at="2016-12-12T21:24:21Z">
       <class name="com.hotelsTest.hotels.comTest.sample">
-        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="setBrowser" is-config="true" duration-ms="6469" started-at="2016-12-08T23:10:56Z" finished-at="2016-12-08T23:11:03Z">
+        <test-method status="PASS" signature="setBrowser(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@c269425]" name="setBrowser" is-config="true" duration-ms="10941" started-at="2016-12-12T16:23:57Z" finished-at="2016-12-12T16:24:08Z">
           <params>
             <param index="0">
               <value>
@@ -18,39 +18,22 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setBrowser -->
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="testMe" duration-ms="33" started-at="2016-12-08T23:11:04Z" data-provider="test" finished-at="2016-12-08T23:11:04Z">
+        <test-method status="PASS" signature="NavigateToHotelDeals(java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@c269425]" name="NavigateToHotelDeals" is-config="true" duration-ms="6365" started-at="2016-12-12T16:24:08Z" finished-at="2016-12-12T16:24:14Z">
           <params>
             <param index="0">
               <value>
-                <![CDATA[123]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[456]]>
+                <![CDATA[saucelabs]]>
               </value>
             </param>
           </params>
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMe -->
-        <test-method status="PASS" signature="testMe(java.lang.String, java.lang.String)[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="testMe" duration-ms="2" started-at="2016-12-08T23:11:04Z" data-provider="test" finished-at="2016-12-08T23:11:04Z">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[asdf]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[asdf]]>
-              </value>
-            </param>
-          </params>
+        </test-method> <!-- NavigateToHotelDeals -->
+        <test-method status="PASS" signature="TS05()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@c269425]" name="TS05" duration-ms="6249" started-at="2016-12-12T16:24:14Z" finished-at="2016-12-12T16:24:21Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testMe -->
-        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@8d8f754]" name="tearDown" is-config="true" duration-ms="3061" started-at="2016-12-08T23:11:04Z" finished-at="2016-12-08T23:11:07Z">
+        </test-method> <!-- TS05 -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.hotelsTest.hotels.comTest.sample@c269425]" name="tearDown" is-config="true" duration-ms="671" started-at="2016-12-12T16:24:21Z" finished-at="2016-12-12T16:24:21Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

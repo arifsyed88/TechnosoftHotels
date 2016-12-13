@@ -3,21 +3,23 @@ package utils;
 import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import org.openqa.selenium.By;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.WebElement;
 
-public class Calender extends WebDriverFactory{
+public class Calender{
 	private static Calendar calendar = Calendar.getInstance();
 	private static SimpleDateFormat timeFormat = new SimpleDateFormat("MM/dd/yy");
 	
-	public static void travelDate(boolean Tomorrow, By locater){
+	public static void travelDate(boolean Tomorrow, WebElement element){
 		if(Tomorrow=true){
 			String tomorrow = addDaysToCurrentDate(1);
-			getDriver().findElement(locater).click();
-			getDriver().findElement(By.cssSelector("a[aria-label='"+ tomorrow+ "']")).click();//static
+			element.click();
+			WebDriverFactory.getDriver().findElement(By.cssSelector("a[aria-label='"+ tomorrow+ "']")).click();
 			
 		}else{
 			String dayAfterTomorrow = addDaysToCurrentDate(2);
-			getDriver().findElement(locater).click();// locater needed here
-			getDriver().findElement(By.cssSelector("a[aria-label='"+ dayAfterTomorrow+ "']")).click();
+			element.click();
+			WebDriverFactory.getDriver().findElement(By.cssSelector("a[aria-label='"+ dayAfterTomorrow+ "']")).click();
 		}
 	}
 	
