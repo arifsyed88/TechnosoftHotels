@@ -1,5 +1,6 @@
 package pages;
 
+import java.io.IOException;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -8,6 +9,7 @@ import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import utils.WebDriverFactory;
@@ -16,7 +18,7 @@ public class BaseClass {
 	Actions actions = new Actions(WebDriverFactory.getDriver());
 	
 	protected WebElement findElmt(By locator){
-		return WebDriverFactory.getDriver().findElement(locator);
+		return WebDriverFactory.getDriver().findElement(locator);  
 	}
 	
 	protected void click(WebElement element){
@@ -53,12 +55,32 @@ public class BaseClass {
 		WebDriverFactory.WaitImplicit(5000);
 		elementList.get(indexNum).click();
 	}
-	
+  protected void dropDownFindAndSelect(WebElement element,int input){
+		input = input-1;
+		Select dropDown = new Select(element);
+		dropDown.selectByIndex(input);
+		
+  }
+		protected void radioButtonCheckAndSelect(By locator){			
+			try {			
+				boolean isSelcted= WebDriverFactory.getDriver().findElement(locator).isSelected();
+				if(isSelcted==false){	
+				WebDriverFactory.getDriver().findElement(locator).click();
+				}else{				
+				throw new NoSuchElementException("It can not be checked by default");
+				}
+			} catch (Exception e) {	
+				System.out.println(e.getMessage());
+				e.printStackTrace();
+			}
+		}
+
 	private int autoCompleteListIndex(List<WebElement> list, String input){
       for(WebElement element : list){
           if(element.getText().contains(input)){
               return list.indexOf(element);
           }
+      
       }
       return 0;
   }

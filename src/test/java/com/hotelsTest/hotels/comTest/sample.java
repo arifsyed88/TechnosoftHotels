@@ -40,7 +40,7 @@ public class sample extends WebDriverFactory {
 		HotelDeals.AssertNumOfReviews(1);
 	}
 	
-	@Test(testName = "TS03")
+//	@Test(testName = "TS03")
 		public void TS03(){
 		HotelDeals.searchSpecificHotel("New York", "Hilton");
 		HotelDeals.checkInTom();
