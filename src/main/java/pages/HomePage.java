@@ -15,6 +15,8 @@ public class HomePage extends CommonActions{
 		elementLocations.put("searchDestinationTextBox", By.cssSelector("#qf-0q-destination"));
 		elementLocations.put("search", By.cssSelector("[type='submit']"));
 		elementLocations.put("hotelDeals", By.cssSelector("#hdr-deals"));
+		elementLocations.put("PackagesAndFlights", By.cssSelector("#hdr-packages"));
+		
 		elementLocations.put("menu", By.cssSelector(".trigger"));
 		return findElmt(elementLocations.get(key));
 	}
@@ -32,13 +34,14 @@ public class HomePage extends CommonActions{
 	@Parameters("browserName")
 	public static void goToPage(String page, String browserName){
 		if(browserName.equalsIgnoreCase("sauceLabs")){
-			if(hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).isDisplayed()){
-				hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).click();
-			}
+//			if(hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).isDisplayed()){
+//				hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).click();
+//			}
 			clickButton("menu");
 			clickButton(page);
+		}else{
+			clickButton(page);
 		}
-		
 	}
 	
 	

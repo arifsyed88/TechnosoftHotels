@@ -24,7 +24,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -38,7 +38,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-Suite">
-              <span class="suite-name border-passed">Suite</span>
+              <span class="suite-name border-failed">Suite</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -49,7 +49,7 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-Suite">
-                    <span>C:\Users\Legion\Desktop\TechnosoftHotels\testng.xml</span>
+                    <span>C:\Users\aurph\TechnosoftHotels\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -91,7 +91,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">1 method,   1 passed</span>
+                    <span class="method-stats">3 methods, 1 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Suite" class="hide-methods failed suite-Suite"> (hide)</a> <!-- hide-methods failed suite-Suite -->
+                      <a href="#" panel-name="suite-Suite" class="show-methods failed suite-Suite"> (show)</a> <!-- show-methods failed suite-Suite -->
+                    </span>
+                    <div class="method-list-content failed suite-Suite">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.PackageAndFlightTest" hash-for-method="TA130">TA130</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Suite -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -102,7 +116,12 @@
                     <div class="method-list-content passed suite-Suite">
                       <span>
                         <img width="3%" src="passed.png"/>
-                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.sample" hash-for-method="TS05">TS05</a> <!-- method navigator-link -->
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.PackageAndFlightTest" hash-for-method="TA110">TA110</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Suite" title="com.hotelsTest.hotels.comTest.PackageAndFlightTest" hash-for-method="TA111">TA111</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                     </div> <!-- method-list-content passed suite-Suite -->
@@ -117,17 +136,47 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-Suite" class="panel Suite">
-          <div class="suite-Suite-class-passed">
+          <div class="suite-Suite-class-failed">
             <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.hotelsTest.hotels.comTest.sample</span>
+              <img src="failed.png"/>
+              <span class="class-name">com.hotelsTest.hotels.comTest.PackageAndFlightTest</span>
             </div> <!-- main-panel-header rounded-window-top -->
             <div class="main-panel-content rounded-window-bottom">
               <div class="method">
                 <div class="method-content">
-                  <a name="TS05">
-                  </a> <!-- TS05 -->
-                  <span class="method-name">TS05</span>
+                  <a name="TA130">
+                  </a> <!-- TA130 -->
+                  <span class="method-name">TA130</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 0, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:653)
+	at java.util.ArrayList.get(ArrayList.java:429)
+	at generalActions.CommonActions.autoComplete(CommonActions.java:23)
+	at pages.PackagesAndFlights.flightTo(PackagesAndFlights.java:58)
+	at com.hotelsTest.hotels.comTest.PackageAndFlightTest.TA130(PackageAndFlightTest.java:57)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Suite-class-failed -->
+          <div class="suite-Suite-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.hotelsTest.hotels.comTest.PackageAndFlightTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="TA110">
+                  </a> <!-- TA110 -->
+                  <span class="method-name">TA110</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="TA111">
+                  </a> <!-- TA111 -->
+                  <span class="method-name">TA111</span>
                 </div> <!-- method-content -->
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
@@ -135,19 +184,19 @@
         </div> <!-- panel Suite -->
         <div panel-name="test-xml-Suite" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Users\Legion\Desktop\TechnosoftHotels\testng.xml</span>
+            <span class="header-content">C:\Users\aurph\TechnosoftHotels\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
 &lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
 &lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
 &lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Suite&quot;&gt;
-  &lt;test name=&quot;SauceLabsTests&quot;&gt;
-    &lt;parameter name=&quot;browserName&quot; value=&quot;saucelabs&quot;/&gt;
+  &lt;test name=&quot;ChromeTests&quot;&gt;
+    &lt;parameter name=&quot;browserName&quot; value=&quot;chrome&quot;/&gt;
     &lt;classes&gt;
-      &lt;class name=&quot;com.hotelsTest.hotels.comTest.sample&quot;/&gt;
+      &lt;class name=&quot;com.hotelsTest.hotels.comTest.PackageAndFlightTest&quot;/&gt;
     &lt;/classes&gt;
-  &lt;/test&gt; &lt;!-- SauceLabsTests --&gt;
+  &lt;/test&gt; &lt;!-- ChromeTests --&gt;
 &lt;/suite&gt; &lt;!-- Suite --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -159,7 +208,7 @@
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">SauceLabsTests (1 class)</span>
+                <span class="test-name">ChromeTests (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -185,16 +234,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(1);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TS05')
-data.setCell(0, 2, 'com.hotelsTest.hotels.comTest.sample')
-data.setCell(0, 3, 6249);
+data.setCell(0, 1, 'TA111')
+data.setCell(0, 2, 'com.hotelsTest.hotels.comTest.PackageAndFlightTest')
+data.setCell(0, 3, 14258);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'TA130')
+data.setCell(1, 2, 'com.hotelsTest.hotels.comTest.PackageAndFlightTest')
+data.setCell(1, 3, 9040);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'TA110')
+data.setCell(2, 2, 'com.hotelsTest.hotels.comTest.PackageAndFlightTest')
+data.setCell(2, 3, 4503);
 window.suiteTableData['Suite']= { tableData: data, tableDiv: 'times-div-Suite'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 6 seconds</span>
+              <span class="suite-total-time">Total running time: 27 seconds</span>
               <div id="times-div-Suite">
               </div> <!-- times-div-Suite -->
             </div> <!-- times-div -->
@@ -220,22 +277,40 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">com.hotelsTest.hotels.comTest.sample</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">com.hotelsTest.hotels.comTest.PackageAndFlightTest</div> <!-- chronological-class-name -->
               <div class="configuration-test before">
-                <span class="method-name">setBrowser(saucelabs)</span>
+                <span class="method-name">setBrowser(chrome)</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-test before -->
               <div class="configuration-method before">
-                <span class="method-name">NavigateToHotelDeals(saucelabs)</span>
-                <span class="method-start">11045 ms</span>
+                <span class="method-name">NavigateToHotelDeals(chrome)</span>
+                <span class="method-start">11524 ms</span>
               </div> <!-- configuration-method before -->
               <div class="test-method">
-                <span class="method-name">TS05</span>
-                <span class="method-start">17410 ms</span>
+                <span class="method-name">TA110</span>
+                <span class="method-start">16917 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToHotelDeals(chrome)</span>
+                <span class="method-start">21429 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">TA111</span>
+                <span class="method-start">21561 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method before">
+                <span class="method-name">NavigateToHotelDeals(chrome)</span>
+                <span class="method-start">35821 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">TA130</span>
+                <span class="method-start">36897 ms</span>
               </div> <!-- test-method -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">23707 ms</span>
+                <span class="method-start">45956 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

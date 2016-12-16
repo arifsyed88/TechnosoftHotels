@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
-  <parameter name="browserName" value="saucelabs"/>
-  <test name="SauceLabsTests(failed)">
-    <parameter name="browserName" value="saucelabs"/>
+  <parameter name="browserName" value="chrome"/>
+  <test name="ChromeTests(failed)">
+    <parameter name="browserName" value="chrome"/>
     <classes>
-      <class name="com.hotelsTest.hotels.comTest.sample">
+      <class name="com.hotelsTest.hotels.comTest.PackageAndFlightTest">
         <methods>
           <include name="setBrowser"/>
-          <include name="NavigateToHotelDeals"/>
-          <include name="TS04"/>
+          <include name="TA130"/>
           <include name="tearDown"/>
+          <include name="NavigateToHotelDeals"/>
         </methods>
-      </class> <!-- com.hotelsTest.hotels.comTest.sample -->
+      </class> <!-- com.hotelsTest.hotels.comTest.PackageAndFlightTest -->
     </classes>
-  </test> <!-- SauceLabsTests(failed) -->
+  </test> <!-- ChromeTests(failed) -->
 </suite> <!-- Failed suite [Suite] -->

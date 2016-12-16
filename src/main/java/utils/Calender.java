@@ -34,6 +34,15 @@ public class Calender{
 		calendar.set(year, month, day);
 		String chosenDate = timeFormat.format(calendar.getTime());
 	}
-	
-	
-}
+
+
+	public static void chooseDatePackagesAndFlights(int days, WebElement element){
+			calendar.add(Calendar.DATE, days);
+			String year = new SimpleDateFormat("yyyy").format(calendar.getTime());
+			int mon = Integer.parseInt(new SimpleDateFormat("MM").format(calendar.getTime())) -1;
+			String day = new SimpleDateFormat("dd").format(calendar.getTime());
+		
+			element.click();
+			WebDriverFactory.getDriver().findElement(By.cssSelector("button[data-year='" + year + "'][data-month='" + mon + "'][data-day='" + day + "']")).click();
+	}
+	}
