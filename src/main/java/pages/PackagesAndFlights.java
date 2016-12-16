@@ -74,7 +74,7 @@ public class PackagesAndFlights extends CommonActions {
 		elementList2.get(indexNum).click();
 	}
 	
-public static int autoCompleteListIndex(List<WebElement> list, String input){
+	public static int autoCompleteListIndex(List<WebElement> list, String input){
         
         for(WebElement element : list){
             if(element.getText().equals(input)){
@@ -83,5 +83,7 @@ public static int autoCompleteListIndex(List<WebElement> list, String input){
         }
         return 0;
     }
+	
+	
 	
 }

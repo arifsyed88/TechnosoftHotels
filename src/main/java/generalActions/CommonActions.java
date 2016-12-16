@@ -36,6 +36,10 @@ public class CommonActions extends BaseClass{
 		Calender.travelDate(true, element);
 	}
 	
+	protected static void clearTextField(WebElement element){
+		element.clear();
+	}
+	
 	protected static void checkOutDayAfterTom(WebElement element){
 		Calender.travelDate(true, element);
 	}

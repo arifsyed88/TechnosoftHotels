@@ -6,6 +6,7 @@ import java.util.List;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
+import org.openqa.selenium.support.ui.Select;
 import org.testng.Assert;
 
 import generalActions.BaseClass;
@@ -18,16 +19,24 @@ public class SearchResultsHotels extends CommonActions{
 	private static SearchResultsHotels srchRslts = new SearchResultsHotels();
 	
 	private WebElement searchResultsElements(String key){
+		
 		HashMap<String, By> elementLocations = new HashMap<String, By>();
 		elementLocations.put("enterDates", By.xpath("//li[1]//a/span"));
 		elementLocations.put("checkIn", By.cssSelector("#overlay-q-localised-check-in"));
 		elementLocations.put("checkOut", By.cssSelector("#overlay-q-localised-check-out"));
+		elementLocations.put("changeSearchCheckIn", By.cssSelector("#q-localised-check-in"));
+		elementLocations.put("changeSearchCheckOut", By.cssSelector("#q-localised-check-out"));
 		elementLocations.put("numOfNights", By.xpath(".//*[@id='overlay-q-nights']//span[contains(@class,'num-nights')]"));
 		elementLocations.put("calendarContinue",By.cssSelector(".cta.widget-overlay-ok"));
 		elementLocations.put("header", By.cssSelector(".summary>h1"));
+		elementLocations.put("occupants", By.cssSelector(".search-rooms"));
+		elementLocations.put("showRecentSearches", By.cssSelector(".recent-search-toggle"));
+		elementLocations.put("search", By.cssSelector(".cta.cta-strong"));
 		elementLocations.put("starRating", By.cssSelector(".active [name='f-star-rating']"));
 		elementLocations.put("neighborhood", By.xpath(".//*[@id='applied-filters']//li[2]/strong"));
 		elementLocations.put("noHotelsMessage", By.cssSelector(".info.unavailable-info"));
+		elementLocations.put("changeSearch", By.xpath("//button[text()='Change search']"));
+		elementLocations.put("destination", By.cssSelector("#q-destination"));
 		return findElmt(elementLocations.get(key));
 	}
 	
@@ -38,6 +47,9 @@ public class SearchResultsHotels extends CommonActions{
 		elmntList.put("searchHotels", By.cssSelector(".autosuggest-hotel .autosuggest-category-result"));
 		elmntList.put("starRating", By.cssSelector("[name='f-star-rating'][type='checkbox']"));
 		elmntList.put("neighborhood", By.xpath("//*[@id='filter-neighbourhood']//label"));
+		elmntList.put("recentSearches", By.cssSelector(".recent-search"));
+		elmntList.put("recentSearchOccupants", By.cssSelector(".recent-search>p"));
+		elmntList.put("recentSearchData", By.cssSelector(".recent-search a"));
 		return elmntList.get(key);
 	}
 	
@@ -100,6 +112,12 @@ public class SearchResultsHotels extends CommonActions{
 		Assert.assertEquals(filter, expected);
 	}
 	
+	public static void searchDestination(String state, String city){
+		CommonActions.clearTextField(srchRslts.searchResultsElements("destination"));
+		srchRslts.enterData(srchRslts.searchResultsElements("destination"), state);
+		CommonActions.autoComplete(srchRslts.elmtListLocations("searchCities"), city);
+	}
+	
 	public static void checkoutGuestReviewsofSelection(int index){
 		srchRslts.listSelectByIndex(srchRslts.elmtListLocations("searchPageReviews"), index).click();
 	}
@@ -112,12 +130,43 @@ public class SearchResultsHotels extends CommonActions{
 		srchRslts.actionClick(srchRslts.searchResultsElements(buttonName));
 	}
 	
-	public static void checkIn(){
+	public static void checkIn(boolean changingSearch){
+		if(changingSearch=false){
 		CommonActions.checkInTom(srchRslts.searchResultsElements("checkIn"));
+		}else{
+		CommonActions.checkInTom(srchRslts.searchResultsElements("changeSearchCheckIn"));
+		}
 	}
 	
-	public static void checkOut(){
-		CommonActions.checkOutDayAfterTom(srchRslts.searchResultsElements("checkOut"));
+	public static void checkOut(boolean changingSearch){
+		if(changingSearch=false){
+			CommonActions.checkInTom(srchRslts.searchResultsElements("checkOut"));
+			}else{
+			CommonActions.checkInTom(srchRslts.searchResultsElements("changeSearchCheckOut"));
+		}
 	}
-
+	
+	public static void clearField(String field){
+		CommonActions.clearTextField(srchRslts.searchResultsElements(field));
+	}
+	
+	public static void verifyRecentSearches(int searchesToBeDisplayed){
+		List<WebElement> recentSearches = WebDriverFactory.getDriver().findElements(
+				srchRslts.elmtListLocations("recentSearches"));
+		int searchesDisplayed = recentSearches.size();
+		Assert.assertEquals(searchesDisplayed, searchesToBeDisplayed);
+	}
+	
+	public static void verifyRecentSearchText(int searchNum, String expectedLocation, String expectedOccupants){
+		WebElement recentSearchData =srchRslts.listSelectByIndex(srchRslts.elmtListLocations("recentSearchData"), searchNum);
+		WebElement recentSearchOccupants =srchRslts.listSelectByIndex(srchRslts.elmtListLocations("recentSearchOccupants"), searchNum);
+		String[] allData =recentSearchOccupants.getText().split(", ");
+		String acutalOccupants = allData[0]+", "+allData[1];
+		srchRslts.verifyMessage(recentSearchData, expectedLocation);
+		Assert.assertEquals(acutalOccupants, expectedOccupants);
+	}
+	
+	public static void selectMinimumPrice(){
+		//Select 
+	}
 }

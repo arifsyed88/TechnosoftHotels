@@ -8,8 +8,7 @@
       <class name="com.hotelsTest.hotels.comTest.sample">
         <methods>
           <include name="setBrowser"/>
-          <include name="TS06"/>
-          <include name="TS02"/>
+          <include name="TS08"/>
           <include name="NavigateToHomePage"/>
           <include name="tearDown"/>
           <include name="NavigateToHotelDeals"/>

@@ -35,6 +35,7 @@ public class HotelDeals extends CommonActions{
 	}
 	
 	public static void searchDestination(String state, String city){
+		CommonActions.clearTextField(deals.hDealsElements("searchDestinationTextBox"));
 		deals.enterData(deals.hDealsElements("searchDestinationTextBox"), state);
 		CommonActions.autoComplete(deals.elmtListLocations("searchCities"), city);
 	}
