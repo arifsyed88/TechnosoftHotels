@@ -9,7 +9,7 @@
     </classes>
   </test>  Test -->
   
-<test name="ChromeTests">
+  <test name="ChromeTests">
   <parameter name="browserName" value="chrome"/>
     <classes>
       <class name="com.hotelsTest.hotels.comTest.PackageAndFlightTest"/>

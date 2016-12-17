@@ -34,9 +34,9 @@ public class HomePage extends CommonActions{
 	@Parameters("browserName")
 	public static void goToPage(String page, String browserName){
 		if(browserName.equalsIgnoreCase("sauceLabs")){
-//			if(hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).isDisplayed()){
-//				hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).click();
-//			}
+			if(hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).isDisplayed()){
+				hotels.findElmt(By.cssSelector(".cta.widget-overlay-close")).click();
+			}
 			clickButton("menu");
 			clickButton(page);
 		}else{

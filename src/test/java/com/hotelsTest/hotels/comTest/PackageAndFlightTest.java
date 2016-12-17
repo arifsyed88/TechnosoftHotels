@@ -13,7 +13,7 @@ public class PackageAndFlightTest extends WebDriverFactory {
 	
 	@Parameters("browserName")
 	@BeforeMethod
-		public void NavigateToHotelDeals(String browserName){
+		public void NavigateToPage(String browserName){
 		HomePage.goToPage("PackagesAndFlights", browserName);
 	}
 		
@@ -33,7 +33,7 @@ public class PackageAndFlightTest extends WebDriverFactory {
 			PackagesAndFlights.verifyHeadLine("Select your departure to Los Angeles");
 	}
 
-		@Test(testName = "TA111")
+//		@Test(testName = "TA111")
 		public void TA111() throws InterruptedException {
 			
 			PackagesAndFlights.clickButton("ThingsToDo");
@@ -49,7 +49,7 @@ public class PackageAndFlightTest extends WebDriverFactory {
 		
 }
 
-		@Test(testName = "TA130")
+//		@Test(testName = "TA130")
 		public void TA130() throws InterruptedException {
 			PackagesAndFlights.clickButton("Flight");
 			PackagesAndFlights.clickButton("MultipleDestination");
@@ -64,4 +64,36 @@ public class PackageAndFlightTest extends WebDriverFactory {
 			PackagesAndFlights.clickButton("Search");
 			PackagesAndFlights.verifyMultDestHeadLine("Multi-city trip from Newark");
 		}
-}
+		
+//		@Test(testName = "TA134")
+//		public void TA134() throws InterruptedException {
+//			PackagesAndFlights.clickButton("FlightAndHotel");
+//			PackagesAndFlights.clickOnFlightAndHotel();
+//			PackagesAndFlights.flyingFromNewyork();
+//			PackagesAndFlights.flyingToLosAngeles();
+//			PackagesAndFlights.departTomorrow();
+//			PackagesAndFlights.returnAWeekFromTomorrow();
+//			PackagesAndFlights.selectOneRoom();
+//			PackagesAndFlights.checkTheCheckbox();
+//			PackagesAndFlights.selectOneAdult();
+//			PackagesAndFlights.selectZeroChild();
+//			PackagesAndFlights.clickOnsearchButton();
+//			PackagesAndFlights.verifyHeaderFlightAndHotel();	
+//			}
+		
+		//@Test(testName="TA5")
+//		public void TA5() throws IOException{
+//			PreTestRequirements.goToPackagesAndFlights();
+//			implicitWaitOn(5000);
+//			PackagesAndFlights_Page.clickOnBeachPackage();
+//			PackagesAndFlights_Page.leaveFromJFK();
+//			PackagesAndFlights_Page.goingToMiami();
+//			PackagesAndFlights_Page.selectOneRoomInBeachPackage();
+//			PackagesAndFlights_Page.selectTwoAdultsInBeachPackage();
+//			PackagesAndFlights_Page.selectZeroChildrenInBeachPackage();
+//			PackagesAndFlights_Page.selectFirstClass();
+//			PackagesAndFlights_Page.searchBeachPackages();
+//			implicitWaitOn(5000);
+//			PackagesAndFlights_Page.verifyEnterDatesMessage();
+		}
+

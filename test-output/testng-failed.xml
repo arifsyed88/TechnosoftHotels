@@ -9,8 +9,8 @@
         <methods>
           <include name="setBrowser"/>
           <include name="TA130"/>
+          <include name="NavigateToPage"/>
           <include name="tearDown"/>
-          <include name="NavigateToHotelDeals"/>
         </methods>
       </class> <!-- com.hotelsTest.hotels.comTest.PackageAndFlightTest -->
     </classes>

@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>SauceLabsTests</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>1/0/2</td>
+<td>Tests passed/Failed/Skipped:</td><td>0/0/3</td>
 </tr><tr>
-<td>Started on:</td><td>Thu Dec 15 17:45:38 EST 2016</td>
+<td>Started on:</td><td>Thu Dec 15 23:45:57 EST 2016</td>
 </tr>
-<tr><td>Total time:</td><td>39 seconds (39499 ms)</td>
+<tr><td>Total time:</td><td>14 seconds (14385 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -75,18 +75,18 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToHotelDeals()'><b>NavigateToHotelDeals</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest<br>Parameters: saucelabs</td>
+<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToPage()'><b>NavigateToPage</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest<br>Parameters: saucelabs</td>
 <td><div><pre>org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=43.0.2357.65)
   (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.22 seconds
+Command duration or timeout: 2.20 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;unknown&apos;, revision: &apos;3169782&apos;, time: &apos;2016-09-29 10:24:50 -0700&apos;
-System info: host: &apos;LAPTOP-AMA7L6BO&apos;, ip: &apos;192.168.13.92&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+System info: host: &apos;LAPTOP-AMA7L6BO&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3800_18699}, takesHeapSnapshot=true, hasMetadata=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.65, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=14181b36d59f448eacb4d1a58232ff9f, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 14181b36d59f448eacb4d1a58232ff9f
-*** Element info: {Using=css selector, value=.trigger}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3128_18370}, takesHeapSnapshot=true, hasMetadata=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.65, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=d430917bd5c1440b8c87834ab39c32d7, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d430917bd5c1440b8c87834ab39c32d7
+*** Element info: {Using=css selector, value=.cta.widget-overlay-close}
 	at org.openqa.selenium.remote.ErrorHandler.createThrowable(ErrorHandler.java:206)
 	at org.openqa.selenium.remote.ErrorHandler.throwIfResponseFailed(ErrorHandler.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:636)
@@ -95,22 +95,20 @@ Session ID: 14181b36d59f448eacb4d1a58232ff9f
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at generalActions.BaseClass.findElmt(BaseClass.java:21)
-	at pages.HomePage.hotelSearchPageElements(HomePage.java:21)
-	at pages.HomePage.clickButton(HomePage.java:31)
-	at pages.HomePage.goToPage(HomePage.java:40)
-	at com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToHotelDeals(PackageAndFlightTest.java:17)
-... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1815772036", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1815772036'><pre>org.openqa.selenium.NoSuchElementException: no such element
+	at pages.HomePage.goToPage(HomePage.java:37)
+	at com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToPage(PackageAndFlightTest.java:17)
+... Removed 31 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1636726625", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1636726625'><pre>org.openqa.selenium.NoSuchElementException: no such element
   (Session info: chrome=43.0.2357.65)
   (Driver info: chromedriver=2.15.322448 (52179c1b310fec1797c81ea9a20326839860b7d3),platform=Windows NT 10.0 x86_64) (WARNING: The server did not provide any stacktrace information)
-Command duration or timeout: 5.22 seconds
+Command duration or timeout: 2.20 seconds
 For documentation on this error, please visit: http://seleniumhq.org/exceptions/no_such_element.html
 Build info: version: &apos;unknown&apos;, revision: &apos;3169782&apos;, time: &apos;2016-09-29 10:24:50 -0700&apos;
-System info: host: &apos;LAPTOP-AMA7L6BO&apos;, ip: &apos;192.168.13.92&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
+System info: host: &apos;LAPTOP-AMA7L6BO&apos;, ip: &apos;192.168.1.4&apos;, os.name: &apos;Windows 10&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;1.8.0_102&apos;
 Driver info: org.openqa.selenium.remote.RemoteWebDriver
-Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3800_18699}, takesHeapSnapshot=true, hasMetadata=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.65, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=14181b36d59f448eacb4d1a58232ff9f, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true}]
-Session ID: 14181b36d59f448eacb4d1a58232ff9f
-*** Element info: {Using=css selector, value=.trigger}
+Capabilities [{applicationCacheEnabled=false, rotatable=false, mobileEmulationEnabled=false, chrome={userDataDir=C:\Users\ADMINI~1\AppData\Local\Temp\scoped_dir3128_18370}, takesHeapSnapshot=true, hasMetadata=true, databaseEnabled=false, handlesAlerts=true, version=43.0.2357.65, platform=XP, browserConnectionEnabled=false, nativeEvents=true, acceptSslCerts=true, webdriver.remote.sessionid=d430917bd5c1440b8c87834ab39c32d7, locationContextEnabled=true, webStorageEnabled=true, takesScreenshot=true, browserName=chrome, javascriptEnabled=true, cssSelectorsEnabled=true}]
+Session ID: d430917bd5c1440b8c87834ab39c32d7
+*** Element info: {Using=css selector, value=.cta.widget-overlay-close}
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
 	at sun.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
 	at sun.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
@@ -123,10 +121,8 @@ Session ID: 14181b36d59f448eacb4d1a58232ff9f
 	at org.openqa.selenium.By$ByCssSelector.findElement(By.java:430)
 	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:361)
 	at generalActions.BaseClass.findElmt(BaseClass.java:21)
-	at pages.HomePage.hotelSearchPageElements(HomePage.java:21)
-	at pages.HomePage.clickButton(HomePage.java:31)
-	at pages.HomePage.goToPage(HomePage.java:40)
-	at com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToHotelDeals(PackageAndFlightTest.java:17)
+	at pages.HomePage.goToPage(HomePage.java:37)
+	at com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToPage(PackageAndFlightTest.java:17)
 	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -156,7 +152,7 @@ Session ID: 14181b36d59f448eacb4d1a58232ff9f
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:81)
 </pre></div></td>
 <td>0</td>
-<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@2cde651b</td></tr>
+<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@3bb87d36</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED CONFIGURATIONS</b></td></tr>
@@ -166,23 +162,15 @@ Session ID: 14181b36d59f448eacb4d1a58232ff9f
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToHotelDeals()'><b>NavigateToHotelDeals</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
+<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToPage()'><b>NavigateToPage</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
 <td></td>
 <td>0</td>
-<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@2cde651b</td></tr>
-</table><p>
-<table width='100%' border='1' class='invocation-passed'>
-<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
-<tr><td><b>Test method</b></td>
-<td width="30%"><b>Exception</b></td>
-<td width="10%"><b>Time (seconds)</b></td>
-<td><b>Instance</b></td>
-</tr>
+<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@3bb87d36</td></tr>
 <tr>
-<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.TA110()'><b>TA110</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
+<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.NavigateToPage()'><b>NavigateToPage</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
 <td></td>
-<td>14</td>
-<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@2cde651b</td></tr>
+<td>0</td>
+<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@3bb87d36</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-skipped'>
 <tr><td colspan='4' align='center'><b>SKIPPED TESTS</b></td></tr>
@@ -192,15 +180,20 @@ Session ID: 14181b36d59f448eacb4d1a58232ff9f
 <td><b>Instance</b></td>
 </tr>
 <tr>
+<td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.TA110()'><b>TA110</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
+<td></td>
+<td>0</td>
+<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@3bb87d36</td></tr>
+<tr>
 <td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.TA111()'><b>TA111</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
 <td></td>
 <td>0</td>
-<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@2cde651b</td></tr>
+<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@3bb87d36</td></tr>
 <tr>
 <td title='com.hotelsTest.hotels.comTest.PackageAndFlightTest.TA130()'><b>TA130</b><br>Test class: com.hotelsTest.hotels.comTest.PackageAndFlightTest</td>
 <td></td>
 <td>0</td>
-<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@2cde651b</td></tr>
+<td>com.hotelsTest.hotels.comTest.PackageAndFlightTest@3bb87d36</td></tr>
 </table><p>
 </body>
 </html>
